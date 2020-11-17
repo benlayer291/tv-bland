@@ -22,10 +22,21 @@
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-react": "^7.21.5",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
     "prettier": "2.1.2",
     "stylelint": "^13.7.2",
     "stylelint-config-idiomatic-order": "^8.1.0",
     "stylelint-config-prettier": "^8.0.2",
     "typescript": "^4.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": ["eslint . --ext .ts,.tsx", "prettier **/*.{ts,tsx} --write"],
+    "*.css": "stylelint --fix"
   }
 }
