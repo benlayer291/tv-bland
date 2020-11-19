@@ -1,0 +1,27 @@
+/* ------------------------------------ *\
+  #ShowCard
+\* ------------------------------------ */
+
+.ShowCard {
+  display: block;
+  width: 100%;
+}
+
+.ShowCard__image {
+  margin-bottom: 10px;
+}
+
+.ShowCard__rating {
+  display: none;
+  margin-bottom: 10px;
+
+  @media (--xs) {
+    display: block;
+  }
+}
+
+.ShowCard__text {
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 1.33;
+}
