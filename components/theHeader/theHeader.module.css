@@ -1,0 +1,19 @@
+/* ------------------------------------ *\
+  #TheHeader
+\* ------------------------------------ */
+
+.TheHeader{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: $bhh-sm;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (--sm) {
+    height: $bhh;
+  }
+}
