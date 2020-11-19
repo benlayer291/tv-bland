@@ -10,7 +10,13 @@
     "lint:styles": "stylelint **/*.css"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "next": "10.0.1",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-flexbugs-fixes": "^5.0.1",
+    "postcss-nested": "^5.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-simple-vars": "^6.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
@@ -36,7 +42,10 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx}": ["eslint . --ext .ts,.tsx", "prettier **/*.{ts,tsx} --write"],
+    "*.{ts,tsx}": [
+      "eslint . --ext .ts,.tsx",
+      "prettier **/*.{ts,tsx} --write"
+    ],
     "*.css": "stylelint --fix"
   }
 }

@@ -7,3 +7,6 @@
 
 # production
 /build
+
+# config
+postcss.config.js
