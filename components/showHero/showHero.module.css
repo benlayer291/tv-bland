@@ -1,0 +1,77 @@
+/* ------------------------------------ *\
+  #ShowHero
+\* ------------------------------------ */
+
+.ShowHero {
+  padding-bottom: 50px;
+  border-bottom: 2px solid $black;
+  margin-bottom: $bsu-lg;
+
+  @media (--xs) {
+    padding-bottom: 0;
+    margin-bottom: 130px;
+  }
+}
+
+.ShowHero__container {
+  display: block;
+
+  @media (--xs) {
+    display: grid;
+    margin-bottom: -$bsu-md;
+    grid-column-gap: 50px;
+    grid-row-gap: 0;
+    grid-template-columns: 272px auto;
+  }
+}
+
+.ShowHero__image {
+  margin-bottom: $bsu;
+
+  @media (--xs) {
+    margin-bottom: 0;
+  }
+}
+
+.ShowHero__info {
+  max-width: 700px;
+
+  @media (--xs) {
+    padding-bottom: $bsu-md;
+    margin-top: $bsu-md;
+  }
+}
+
+.ShowHero__rating {
+  margin-bottom: $bsu;
+}
+
+.ShowHero__description {
+  position: relative;
+  margin-bottom: 0;
+
+  @media (--xs) {
+    /* max-height is 4 x line-height */
+    overflow: hidden;
+    max-height: 150px;
+  }
+}
+
+/* .Show__description--overflow &:after {
+  display: none;
+
+  @media (--xs) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 50%;
+    height: 30px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 50%
+    );
+    content: '';
+  }
+} */
