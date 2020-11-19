@@ -1,15 +1,17 @@
-import Head from 'next/head'
+import TheHomeHero from '../components/theHomeHero/theHomeHero'
+import ShowSchedule from '../components/showSchedule/showSchedule'
+import BaseSection from '../components/baseSection/baseSection'
+import TheLayout from '../components/theLayout/theLayout'
 
-export default function Home() {
+const Home: React.FunctionComponent = () => {
   return (
-    <>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main>
-        <h1>Home page</h1>
-      </main>
-    </>
+    <TheLayout home>
+      <TheHomeHero />
+      <BaseSection>
+        <ShowSchedule shows={Array(16).fill(null)} />
+      </BaseSection>
+    </TheLayout>
   )
 }
+
+export default Home
