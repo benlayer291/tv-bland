@@ -17,7 +17,7 @@ const ShowInfo: React.FunctionComponent<Props> = ({
   show,
 }: Props) => {
   const showInfo = [
-    { left: 'Streamed on', right: show.network.name },
+    { left: 'Streamed on', right: show.network?.name },
     {
       left: 'Schedule',
       right: `${show.schedule.days.join(', ')} at ${show.schedule.time}`,

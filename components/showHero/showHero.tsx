@@ -37,9 +37,6 @@ const ShowHero: React.FunctionComponent<Props> = ({ show }: Props) => {
                 dangerouslySetInnerHTML={{ __html: show.summary }}
               />
             </div>
-            {/* <div className={styles.ShowHero__readMore}>
-              <button type="button">Read More</button>
-            </div> */}
           </div>
         </div>
       </div>
