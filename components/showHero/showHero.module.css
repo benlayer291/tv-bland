@@ -47,13 +47,8 @@
 }
 
 .ShowHero__description {
-  position: relative;
-  margin-bottom: 0;
-
-  @media (--xs) {
-    /* max-height is 4 x line-height */
-    overflow: hidden;
-    max-height: 150px;
+  & p {
+    margin-bottom: 0;
   }
 }
 

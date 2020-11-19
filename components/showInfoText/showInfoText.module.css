@@ -13,9 +13,11 @@
 
 .ShowInfoText__left {
   flex: 0 1 33%;
+  font-weight: 700;
 
   .ShowInfoText--reverse & {
     flex: 0 1 67%;
+    font-weight: 400;
   }
 }
 
@@ -25,5 +27,6 @@
   .ShowInfoText--reverse & {
     flex: 0 1 33%;
     order: -1;
+    font-weight: 700;
   }
 }

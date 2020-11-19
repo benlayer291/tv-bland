@@ -1,40 +1,41 @@
 import classNames from 'classnames'
 
-import wrapperStyles from '../../styles/objects/wrappers.module.css'
+import { InterfaceTvShow } from '../../types/interfaces'
+
 import ShowImage from '../showImage/showImage'
 import StarRating from '../starRating/starRating'
+
+import wrapperStyles from '../../styles/objects/wrappers.module.css'
 import styles from './showHero.module.css'
 
-const ShowHero: React.FunctionComponent = () => {
+type Props = {
+  show: InterfaceTvShow
+}
+
+const ShowHero: React.FunctionComponent<Props> = ({ show }: Props) => {
   return (
     <div className={styles.ShowHero}>
       <div className={wrapperStyles.wrapper}>
         <div className={styles.ShowHero__container}>
           <div className={styles.ShowHero__image}>
-            <ShowImage />
+            <ShowImage
+              src={show.image?.medium || show.image?.original}
+              alt={`Cover image for ${show.name}`}
+            />
           </div>
           <div className={styles.ShowHero__info}>
             <StarRating
               className={styles.ShowHero__rating}
-              rating={6}
+              rating={show.rating?.average}
               isLarge
               withText
             />
             <div className={styles.ShowHero__text}>
-              <h1>
-                This is the title of the TV show which is very long isn&apos;t
-                it
-              </h1>
-              <p
-                className={classNames(styles.ShowHero__description, {
-                  [styles['Show__description--overflow']]: true,
-                })}
-              >
-                Hinc ille commotus ut iniusta perferens et indigna praefecti
-                custodiam protectoribus mandaverat fidis. quo conperto Montius
-                tunc quaestor acer quidem sed ad lenitatem propensior, consulens
-                in commune.
-              </p>
+              <h1>{show.name}</h1>
+              <div
+                className={classNames(styles.ShowHero__description)}
+                dangerouslySetInnerHTML={{ __html: show.summary }}
+              />
             </div>
             {/* <div className={styles.ShowHero__readMore}>
               <button type="button">Read More</button>

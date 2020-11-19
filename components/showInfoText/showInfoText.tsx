@@ -21,8 +21,8 @@ const ShowInfoText: React.FunctionComponent<Props> = ({
         [styles['ShowInfoText--reverse']]: reverse,
       })}
     >
-      <div className={styles.ShowInfoText__left}>{left}</div>
-      <div className={styles.ShowInfoText__right}>{right}</div>
+      <span className={styles.ShowInfoText__left}>{left}</span>
+      <span className={styles.ShowInfoText__right}>{right}</span>
     </div>
   )
 }

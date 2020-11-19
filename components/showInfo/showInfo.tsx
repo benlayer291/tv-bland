@@ -1,4 +1,7 @@
 import classNames from 'classnames'
+
+import { InterfaceTvShow } from '../../types/interfaces'
+
 import ShowInfoText from '../showInfoText/showInfoText'
 import ShowInfoImage from '../showInfoImage/showInfoImage'
 
@@ -6,25 +9,36 @@ import styles from './showInfo.module.css'
 
 type Props = {
   className?: string
+  show: InterfaceTvShow
 }
 
-const ShowInfo: React.FunctionComponent<Props> = ({ className }: Props) => {
+const ShowInfo: React.FunctionComponent<Props> = ({
+  className,
+  show,
+}: Props) => {
   const showInfo = [
-    { left: 'Streamed on', right: 'BBC3' },
-    { left: 'Schedule', right: 'Tuesdays' },
-    { left: 'Status', right: 'Running' },
-    { left: 'Genres', right: 'Drama, Comedy, Music' },
+    { left: 'Streamed on', right: show.network.name },
+    {
+      left: 'Schedule',
+      right: `${show.schedule.days.join(', ')} at ${show.schedule.time}`,
+    },
+    { left: 'Status', right: show.status },
+    { left: 'Genres', right: show.genres.join(', ') },
   ]
 
-  const castInfo = [
-    { image: '', left: 'Hugo Chegwin', right: 'Beats' },
-    { image: '', left: 'Hugo Chegwin', right: 'Beats' },
-    { image: '', left: 'Hugo Chegwin', right: 'Beats' },
-    { image: '', left: 'Hugo Chegwin', right: 'Beats' },
-  ]
+  const castInfo = show?._embedded?.cast.map((castItem) => {
+    return {
+      image:
+        castItem.character.image?.medium || castItem.character.image?.original,
+      left: castItem.character.name,
+      right: castItem.person.name,
+    }
+  })
 
   const renderRows = (rowsData) => {
     return rowsData.map((rowData, index) => {
+      if (!rowData.left || !rowData.right) return
+
       return (
         <li
           key={index}
@@ -33,8 +47,12 @@ const ShowInfo: React.FunctionComponent<Props> = ({ className }: Props) => {
             [styles['ShowInfo__row--full']]: rowData.image !== undefined,
           })}
         >
-          {rowData.image !== undefined && (
-            <ShowInfoImage className={styles['ShowInfo__rowItem--noFlex']} />
+          {'image' in rowData && (
+            <ShowInfoImage
+              className={styles['ShowInfo__rowItem--noFlex']}
+              src={rowData.image}
+              alt={`Portrait of ${rowData.left}`}
+            />
           )}
           <ShowInfoText
             className={styles.ShowInfo__rowItem}
