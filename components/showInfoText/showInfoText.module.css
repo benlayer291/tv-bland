@@ -1,0 +1,29 @@
+/* ------------------------------------ *\
+  #ShowInfoText
+\* ------------------------------------ */
+
+.ShowInfoText {
+  display: flex;
+  flex-direction: column;
+
+  @media (--xs) {
+    flex-direction: row;
+  }
+}
+
+.ShowInfoText__left {
+  flex: 0 1 33%;
+
+  .ShowInfoText--reverse & {
+    flex: 0 1 67%;
+  }
+}
+
+.ShowInfoText__right {
+  flex: 1 0 67%;
+
+  .ShowInfoText--reverse & {
+    flex: 0 1 33%;
+    order: -1;
+  }
+}

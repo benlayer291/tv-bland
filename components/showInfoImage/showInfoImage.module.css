@@ -1,0 +1,30 @@
+/* ------------------------------------ *\
+  #ShowInfoImage
+\* ------------------------------------ */
+
+.ShowInfoImage {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+
+  @media (--sm) {
+    width: 58px;
+    height: 58px;
+    margin-right: 50px;
+  }
+}
+
+.ShowInfoImage__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: auto;
+  height: 100%;
+  background-color: $grey;
+  border-radius: 100%;
+  filter: grayscale(1);
+}
