@@ -12,16 +12,10 @@ const ShowSchedule: React.FunctionComponent<Props> = ({
   className,
   shows,
 }: Props) => {
-  const renderShows = shows.map((show, index) => {
+  const renderShows = shows.map((show) => {
     return (
-      <div
-        key={index}
-        className={classNames(styles.ShowSchedule__item, {
-          [styles['ShowSchedule__item--large']]: index % 3 === 0,
-          [styles['ShowSchedule__item--empty']]: index % 4 === 0,
-        })}
-      >
-        <ShowCard />
+      <div key={show.id} className={styles.ShowSchedule__item}>
+        <ShowCard show={show} />
       </div>
     )
   })

@@ -1,18 +1,32 @@
+import classNames from 'classnames'
+import { InterfaceTvShow } from '../../types/interfaces'
+
 import BaseLink from '../baseLink/baseLink'
 import ShowImage from '../showImage/showImage'
 import StarRating from '../starRating/starRating'
 
 import styles from './showCard.module.css'
 
-const ShowCard: React.FunctionComponent = () => {
+type Props = {
+  show: InterfaceTvShow
+}
+
+const ShowCard: React.FunctionComponent<Props> = ({ show }: Props) => {
   return (
-    <BaseLink className={styles.ShowCard} href={'/shows/123abc'}>
+    <BaseLink className={styles.ShowCard} href={`/shows/${show.id}`}>
       <div className={styles.ShowCard__main}>
-        <ShowImage className={styles.ShowCard__image} />
-        <StarRating className={styles.ShowCard__rating} rating={8} />
-        <p className={styles.ShowCard__text}>
-          This is the title of the TV show which is very long isn&apos;t it
-        </p>
+        <ShowImage
+          className={styles.ShowCard__image}
+          src={show.image?.medium || show.image?.original}
+          alt={`Cover image for ${show.name}`}
+        />
+        <StarRating
+          className={styles.ShowCard__rating}
+          rating={show.rating?.average}
+        />
+        <h3 className={classNames('t-para', styles.ShowCard__text)}>
+          {show.name}
+        </h3>
       </div>
     </BaseLink>
   )

@@ -1,17 +1,49 @@
+import { GetServerSideProps } from 'next'
+
+import { fetchSchedule } from '../services/tvMaze'
+
+import { InterfaceTvShow } from '../types/interfaces'
+
 import TheHomeHero from '../components/theHomeHero/theHomeHero'
 import ShowSchedule from '../components/showSchedule/showSchedule'
 import BaseSection from '../components/baseSection/baseSection'
 import TheLayout from '../components/theLayout/theLayout'
 
-const Home: React.FunctionComponent = () => {
+type Props = {
+  shows: InterfaceTvShow[]
+}
+
+const Home: React.FunctionComponent<Props> = ({ shows }: Props) => {
   return (
     <TheLayout home>
       <TheHomeHero />
       <BaseSection>
-        <ShowSchedule shows={Array(16).fill(null)} />
+        <ShowSchedule shows={shows} />
       </BaseSection>
     </TheLayout>
   )
+}
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  try {
+    const data = await fetchSchedule()
+
+    if (!data) {
+      return {
+        notFound: true,
+      }
+    }
+
+    const shows = data.map(({ show }) => show)
+
+    return {
+      props: { shows },
+    }
+  } catch (error) {
+    return {
+      notFound: true,
+    }
+  }
 }
 
 export default Home
