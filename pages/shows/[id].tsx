@@ -26,9 +26,6 @@ const Show: React.FunctionComponent<Props> = ({ show }: Props) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const data = await fetchSchedule()
-
-  if (!data) return
-
   const paths = data.map(({ show }) => ({
     params: {
       id: show.id.toString(),
@@ -37,13 +34,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: true,
+    fallback: false,
   }
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const id = Array.isArray(params?.id) ? params?.id?.[0] : params?.id
-  const show = await fetchShow(id)
+  const show = await fetchShow(id as string)
 
   return {
     props: {
