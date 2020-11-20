@@ -4,6 +4,15 @@
 
 .ShowImage {
   position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  border: 2px solid $black;
+  background-color: $white;
+}
+
+.ShowImage__container {
+  position: relative;
   display: block;
   overflow: hidden;
   max-width: 100%;
@@ -11,17 +20,17 @@
   height: auto;
   padding-bottom: 150%;
   background-color: $grey;
-}
 
-.ShowImage--no-image {
-  &::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $black;
-    content: '';
+  .ShowImage--no-image & {
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $black;
+      content: '';
+    }
   }
 }
 
@@ -33,10 +42,22 @@
   display: block;
   width: auto;
   height: 100%;
+  transition: opacity 2000ms ease;
+}
+
+.ShowImage__image {
   opacity: 0;
+
+  .ShowImage--revealed & {
+    opacity: 1;
+  }
 }
 
 .ShowImage__filter {
   filter: grayscale(1);
   opacity: 1;
+
+  .ShowImage--revealed & {
+    opacity: 0;
+  }
 }

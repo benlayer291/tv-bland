@@ -30,7 +30,8 @@
   }
 }
 
-.ShowInfoImage__image {
+.ShowInfoImage__image,
+.ShowInfoImage__filter {
   position: absolute;
   top: 0;
   left: 0;
@@ -38,5 +39,22 @@
   width: 100%;
   height: auto;
   background-color: $grey;
+  transition: opacity 2000ms ease;
+}
+
+.ShowInfoImage__image {
+  opacity: 0;
+
+  .ShowInfoImage--revealed & {
+    opacity: 1;
+  }
+}
+
+.ShowInfoImage__filter {
   filter: grayscale(1);
+  opacity: 1;
+
+  .ShowInfoImage--revealed & {
+    opacity: 0;
+  }
 }

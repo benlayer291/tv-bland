@@ -1,4 +1,5 @@
 import classnames from 'classnames'
+import { useEffect, useState } from 'react'
 
 import styles from './showInfoImage.module.css'
 
@@ -13,14 +14,35 @@ const ShowInfoImage: React.FunctionComponent<Props> = ({
   src,
   alt,
 }: Props) => {
+  const [isRevealed, setIsRevealed] = useState(false)
+
+  const getRandomInt = (min: number, max: number): number => {
+    return Math.random() * (max - min) + min
+  }
+
+  useEffect(() => {
+    const timeInterval = getRandomInt(0, 10) * 1000
+    const timeout = setTimeout(() => setIsRevealed(true), timeInterval)
+
+    return () => clearTimeout(timeout)
+  }, [])
+
   return (
     <div
       className={classnames(styles.ShowInfoImage, className, {
         [styles['ShowInfoImage--no-image']]: !src,
+        [styles['ShowInfoImage--revealed']]: isRevealed,
       })}
     >
       {src && (
-        <img className={styles['ShowInfoImage__image']} src={src} alt={alt} />
+        <>
+          <img className={styles['ShowInfoImage__image']} src={src} alt={alt} />
+          <img
+            className={styles['ShowInfoImage__filter']}
+            src={src}
+            alt={alt}
+          />
+        </>
       )}
     </div>
   )

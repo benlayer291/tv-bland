@@ -17,11 +17,14 @@ const ShowHero: React.FunctionComponent<Props> = ({ show }: Props) => {
     <div className={styles.ShowHero}>
       <div className={wrapperStyles.wrapper}>
         <div className={styles.ShowHero__container}>
-          <div className={styles.ShowHero__image}>
-            <ShowImage
-              src={show.image?.medium || show.image?.original}
-              alt={`Cover image for ${show.name}`}
-            />
+          <div className={styles.ShowHero__imageContainer}>
+            <div className={styles.ShowHero__imageContainerInner}>
+              <ShowImage
+                className={styles.ShowHero__image}
+                src={show.image?.medium || show.image?.original}
+                alt={`Cover image for ${show.name}`}
+              />
+            </div>
           </div>
           <div className={styles.ShowHero__info}>
             <StarRating

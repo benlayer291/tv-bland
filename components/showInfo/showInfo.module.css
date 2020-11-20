@@ -29,7 +29,7 @@
     height: 80px;
     flex: 0 1 100%;
     align-items: center;
-    border-bottom: thin solid $black;
+    border-bottom: 2px solid $black;
     margin-bottom: 0;
   }
 }
