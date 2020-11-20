@@ -104,7 +104,6 @@ p a,
 .t-para a,
 .t-link {
   position: relative;
-  opacity: 1;
   transition: all 250ms ease;
   transition-property: opacity, color;
 
@@ -114,15 +113,13 @@ p a,
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: $grey;
+    background-color: $black;
     content: '';
     transition: background-color 250ms ease;
   }
 
   &:hover,
   &:active {
-    opacity: 0.6;
-
     &::after {
       background-color: $red;
     }
