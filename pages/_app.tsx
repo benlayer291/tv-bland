@@ -1,9 +1,15 @@
 import { AppProps } from 'next/app'
+import TheCursor from '../components/theCursor/theCursor'
 
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const MyApp = ({ Component, pageProps }: AppProps) => {
+  return (
+    <>
+      <TheCursor />
+      <Component {...pageProps} />
+    </>
+  )
 }
 
 export default MyApp

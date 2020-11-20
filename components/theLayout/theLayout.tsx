@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
-import TheFooter from '../theFooter/theFooter'
 import TheHeader from '../theHeader/theHeader'
+import TheFooter from '../theFooter/theFooter'
 
 type Props = {
   children?: React.ReactNode
