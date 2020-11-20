@@ -9,6 +9,12 @@
 
 .ShowCard__image {
   margin-bottom: 10px;
+  transition: border-color 500ms ease;
+
+  .ShowCard:hover &,
+  .ShowCard:active & {
+    border-color: $red;
+  }
 }
 
 .ShowCard__rating {
