@@ -38,13 +38,13 @@ const ShowInfo: React.FunctionComponent<Props> = ({
   const renderRows = (rowsData) => {
     return rowsData.map((rowData, index) => {
       if (!rowData.left || !rowData.right) return
-
+      if (rowData?.type === 'character') console.log(rowData.image)
       return (
         <li
           key={index}
           className={classNames(styles.ShowInfo__row, {
-            [styles['ShowInfo__row--center']]: rowData.image !== undefined,
-            [styles['ShowInfo__row--full']]: rowData.image !== undefined,
+            [styles['ShowInfo__row--center']]: 'image' in rowData,
+            [styles['ShowInfo__row--full']]: 'image' in rowData,
           })}
         >
           {'image' in rowData && (
