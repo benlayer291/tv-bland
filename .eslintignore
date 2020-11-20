@@ -9,4 +9,5 @@
 /build
 
 # config
+next.config.js
 postcss.config.js
