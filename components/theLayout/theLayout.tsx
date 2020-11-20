@@ -5,7 +5,6 @@ import TheFooter from '../theFooter/theFooter'
 
 type Props = {
   children?: React.ReactNode
-  home?: boolean
 }
 
 const TheLayout: React.FunctionComponent<Props> = ({ children }: Props) => {

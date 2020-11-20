@@ -1,15 +1,18 @@
-import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 import classNames from 'classnames'
 
 import styles from './theCursor.module.css'
 
-const TheCursor: React.FunctionComponent = () => {
-  if (
+const isMobile = () => {
+  return (
     typeof navigator !== 'undefined' &&
     /Android|Mobi/i.test(navigator.userAgent)
   )
-    return null
+}
+
+const TheCursor: React.FunctionComponent = () => {
+  if (isMobile()) return null
 
   const router = useRouter()
 

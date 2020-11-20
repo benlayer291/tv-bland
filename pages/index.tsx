@@ -7,7 +7,6 @@ import { InterfaceTvShow } from '../types/interfaces'
 import TheHomeHero from '../components/theHomeHero/theHomeHero'
 import ShowSchedule from '../components/showSchedule/showSchedule'
 import BaseSection from '../components/baseSection/baseSection'
-import TheLayout from '../components/theLayout/theLayout'
 
 type Props = {
   shows: InterfaceTvShow[]
@@ -15,12 +14,12 @@ type Props = {
 
 const Home: React.FunctionComponent<Props> = ({ shows }: Props) => {
   return (
-    <TheLayout home>
+    <>
       <TheHomeHero />
       <BaseSection>
         <ShowSchedule shows={shows} />
       </BaseSection>
-    </TheLayout>
+    </>
   )
 }
 
