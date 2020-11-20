@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useScrollPosition as onScroll } from '@n8tb1t/use-scroll-position'
 import classNames from 'classnames'
 
@@ -12,8 +12,8 @@ const TheHeader: React.FunctionComponent = () => {
 
   onScroll(
     ({ prevPos, currPos }) => {
-      const prevScroll = prevPos.y * -1
-      const currScroll = currPos.y * -1
+      const prevScroll = prevPos.y
+      const currScroll = currPos.y
       const scrollThresh = 100
 
       if (currScroll > prevScroll && currScroll > scrollThresh && !isHidden) {
@@ -22,8 +22,14 @@ const TheHeader: React.FunctionComponent = () => {
         setIsHidden(false)
       }
     },
-    [isHidden]
+    [isHidden],
+    null,
+    true
   )
+
+  useEffect(() => {
+    setIsHidden(window.scrollY > 100)
+  }, [])
 
   return (
     <header
