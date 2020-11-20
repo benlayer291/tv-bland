@@ -12,9 +12,9 @@ const ShowSchedule: React.FunctionComponent<Props> = ({
   className,
   shows,
 }: Props) => {
-  const renderShows = shows.map((show) => {
+  const renderShows = shows.map((show, index) => {
     return (
-      <div key={show.id} className={styles.ShowSchedule__item}>
+      <div key={`${show.id}-${index}`} className={styles.ShowSchedule__item}>
         <ShowCard show={show} />
       </div>
     )
