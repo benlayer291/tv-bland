@@ -14,9 +14,9 @@ const TheCursor: React.FunctionComponent = () => {
   const router = useRouter()
 
   const [position, setPosition] = useState({ x: 0, y: 0 })
-  const [hidden, setHidden] = useState(false)
-  const [clicked, setClicked] = useState(false)
-  const [hovered, setHovered] = useState(false)
+  const [isHidden, setHidden] = useState(false)
+  const [isClicked, setClicked] = useState(false)
+  const [isHovered, setHovered] = useState(false)
 
   const onMouseMove = (e) => {
     setPosition({ x: e.clientX, y: e.clientY })
@@ -83,9 +83,9 @@ const TheCursor: React.FunctionComponent = () => {
   return (
     <div
       className={classNames(styles.TheCursor, {
-        [styles['TheCursor--hidden']]: hidden,
-        [styles['TheCursor--clicked']]: clicked,
-        [styles['TheCursor--hovered']]: hovered,
+        [styles['TheCursor--hidden']]: isHidden,
+        [styles['TheCursor--clicked']]: isClicked,
+        [styles['TheCursor--hovered']]: isHovered,
       })}
       style={{ left: position.x, top: position.y }}
     />

@@ -12,8 +12,15 @@
   height: $bhh-sm;
   align-items: center;
   justify-content: flex-start;
+  opacity: 1;
+  transition: opacity 250ms ease;
 
   @media (--sm) {
     height: $bhh;
   }
+}
+
+.TheHeader--hidden {
+  opacity: 0;
+  pointer-events: none;
 }
