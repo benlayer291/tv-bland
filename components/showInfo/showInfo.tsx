@@ -38,7 +38,7 @@ const ShowInfo: React.FunctionComponent<Props> = ({
   const renderRows = (rowsData) => {
     return rowsData.map((rowData, index) => {
       if (!rowData.left || !rowData.right) return
-      if (rowData?.type === 'character') console.log(rowData.image)
+
       return (
         <li
           key={index}
