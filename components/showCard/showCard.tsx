@@ -19,6 +19,8 @@ const ShowCard: React.FunctionComponent<Props> = ({ show }: Props) => {
           className={styles.ShowCard__image}
           src={show.image?.medium || show.image?.original}
           alt={`Cover image for ${show.name}`}
+          height={295}
+          width={210}
         />
         <StarRating
           className={styles.ShowCard__rating}

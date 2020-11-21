@@ -52,6 +52,8 @@ const ShowInfo: React.FunctionComponent<Props> = ({
               className={styles['ShowInfo__rowItem--noFlex']}
               src={rowData.image}
               alt={`Portrait of ${rowData.left}`}
+              height={295}
+              width={210}
             />
           )}
           <ShowInfoText

@@ -23,6 +23,9 @@ const ShowHero: React.FunctionComponent<Props> = ({ show }: Props) => {
                 className={styles.ShowHero__image}
                 src={show.image?.medium || show.image?.original}
                 alt={`Cover image for ${show.name}`}
+                height={295}
+                width={210}
+                eager={true}
               />
             </div>
           </div>

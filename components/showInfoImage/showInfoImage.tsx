@@ -1,18 +1,26 @@
 import classnames from 'classnames'
 import { useEffect, useState } from 'react'
 
+import { urlWithoutProtocol } from '../../utils/helpers'
+
 import styles from './showInfoImage.module.css'
 
 type Props = {
   className: string
   src: string
   alt: string
+  height: number
+  width: number
+  eager?: boolean
 }
 
 const ShowInfoImage: React.FunctionComponent<Props> = ({
   className,
   src,
   alt,
+  height,
+  width,
+  eager = false,
 }: Props) => {
   const [isRevealed, setIsRevealed] = useState(false)
 
@@ -36,11 +44,21 @@ const ShowInfoImage: React.FunctionComponent<Props> = ({
     >
       {src && (
         <>
-          <img className={styles['ShowInfoImage__image']} src={src} alt={alt} />
+          <img
+            className={styles['ShowInfoImage__image']}
+            src={urlWithoutProtocol(src)}
+            alt={alt}
+            width={width}
+            height={height}
+            loading={eager ? 'eager' : 'lazy'}
+          />
           <img
             className={styles['ShowInfoImage__filter']}
-            src={src}
+            src={urlWithoutProtocol(src)}
             alt={alt}
+            width={width}
+            height={height}
+            loading={eager ? 'eager' : 'lazy'}
           />
         </>
       )}
