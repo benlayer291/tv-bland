@@ -1,7 +1,7 @@
 import classnames from 'classnames'
 import { useEffect, useState } from 'react'
 
-import { urlWithoutProtocol } from '../../utils/helpers'
+import { removeProtocolFromUrl } from '../../utils/helpers'
 
 import styles from './showInfoImage.module.css'
 
@@ -46,7 +46,7 @@ const ShowInfoImage: React.FunctionComponent<Props> = ({
         <>
           <img
             className={styles['ShowInfoImage__image']}
-            src={urlWithoutProtocol(src)}
+            src={removeProtocolFromUrl(src)}
             alt={alt}
             width={width}
             height={height}
@@ -54,7 +54,7 @@ const ShowInfoImage: React.FunctionComponent<Props> = ({
           />
           <img
             className={styles['ShowInfoImage__filter']}
-            src={urlWithoutProtocol(src)}
+            src={removeProtocolFromUrl(src)}
             alt={alt}
             width={width}
             height={height}

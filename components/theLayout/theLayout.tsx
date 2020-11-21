@@ -11,15 +11,43 @@ const TheLayout: React.FunctionComponent<Props> = ({ children }: Props) => {
   return (
     <>
       <Head>
-        <title>TV Bland</title>
+        <title key="title">TV Bland</title>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
         />
-        <meta name="description" content="Description" />
-        <meta name="keywords" content="Keywords" />
+        <meta
+          name="description"
+          content="TV Show and web series database. Create personalised schedules. Episode guide, cast, crew and character information."
+          key="description"
+        />
+        <meta
+          name="keywords"
+          content="TV Bland, Ben Layer, Next.js, React"
+          key="keywords"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" key="twcard" />
+
+        {/* Open Graph */}
+        <meta property="og:locale" content="en_GB" key="oglocale" />
+        <meta property="og:site_name" content="TV Bland" key="ogsite_name" />
+        <meta property="og:type" content="website" key="ogtype" />
+
+        {/* DC */}
+        <meta property="dcterms.Language" content="en_GB" key="dclang" />
+        <meta property="dcterms.Type" content="website" key="dctype" />
+        <meta
+          property="dcterms.Creator"
+          content="benlayer291"
+          key="dccreator"
+        />
+        <meta property="dcterms.Format" content="text/html" key="dcformat" />
+
+        {/* PWA */}
         <meta name="theme-color" content="#317EFB" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />

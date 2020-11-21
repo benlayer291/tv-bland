@@ -1,4 +1,5 @@
 import { GetServerSideProps } from 'next'
+import { useRouter } from 'next/router'
 
 import { fetchSchedule } from '../services/tvMaze'
 
@@ -7,6 +8,7 @@ import { InterfaceTvShow } from '../types/interfaces'
 import TheHomeHero from '../components/theHomeHero/theHomeHero'
 import ShowSchedule from '../components/showSchedule/showSchedule'
 import BaseSection from '../components/baseSection/baseSection'
+import BaseMeta from '../components/baseMeta/baseMeta'
 
 type Props = {
   shows: InterfaceTvShow[]
@@ -15,6 +17,7 @@ type Props = {
 const Home: React.FunctionComponent<Props> = ({ shows }: Props) => {
   return (
     <>
+      <BaseMeta />
       <TheHomeHero />
       <BaseSection>
         <ShowSchedule shows={shows} />
