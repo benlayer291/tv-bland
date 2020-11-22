@@ -14,7 +14,7 @@ const TheHeader: React.FunctionComponent = () => {
     ({ prevPos, currPos }) => {
       const prevScroll = prevPos.y
       const currScroll = currPos.y
-      const scrollThresh = 100
+      const scrollThresh = 10
 
       if (currScroll > prevScroll && currScroll > scrollThresh && !isHidden) {
         setIsHidden(true)
@@ -38,7 +38,7 @@ const TheHeader: React.FunctionComponent = () => {
       })}
     >
       <div className={wrapperStyles.wrapper}>
-        <BaseLink className="t-h1" href={'/'}>
+        <BaseLink className={'t-h1'} href={'/'}>
           <strong>TV Bland</strong>
         </BaseLink>
       </div>
