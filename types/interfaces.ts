@@ -1,3 +1,7 @@
+export interface InterfacePositionCoordinates {
+  x: number
+  y: number
+}
 export interface InterfaceTvShowCountry {
   name: string
   code: string

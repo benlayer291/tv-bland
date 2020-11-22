@@ -26,7 +26,6 @@ const BaseMeta: React.FunctionComponent<Props> = ({
     ? `https://tv-bland-two.vercel.app/${urlPath}`
     : 'https://tv-bland-two.vercel.app/'
 
-  console.log(pageTitle, pageDescription, pageImage, pageUrl)
   return (
     <Head>
       <title key="title">{pageTitle}</title>

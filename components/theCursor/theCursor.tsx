@@ -1,25 +1,23 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import classNames from 'classnames'
+import { checkDeviceIsMobile as isMobile } from '../../utils/helpers'
+import { InterfacePositionCoordinates } from '../../types/interfaces'
 
 import styles from './theCursor.module.css'
-
-const isMobile = () => {
-  return (
-    typeof navigator !== 'undefined' &&
-    /Android|Mobi/i.test(navigator.userAgent)
-  )
-}
 
 const TheCursor: React.FunctionComponent = () => {
   if (isMobile()) return null
 
   const router = useRouter()
 
-  const [position, setPosition] = useState({ x: 0, y: 0 })
-  const [isHidden, setHidden] = useState(false)
-  const [isClicked, setClicked] = useState(false)
-  const [isHovered, setHovered] = useState(false)
+  const [position, setPosition] = useState<InterfacePositionCoordinates>({
+    x: 0,
+    y: 0,
+  })
+  const [isHidden, setHidden] = useState<boolean>(false)
+  const [isClicked, setClicked] = useState<boolean>(false)
+  const [isHovered, setHovered] = useState<boolean>(false)
 
   const onMouseMove = (e) => {
     setPosition({ x: e.clientX, y: e.clientY })
@@ -57,10 +55,12 @@ const TheCursor: React.FunctionComponent = () => {
     router.events.on('routeChangeComplete', onRouteChange)
   }
 
-  const addLinkListeners = () => {
+  const addCtaListeners = () => {
     const links = Array.from(document.querySelectorAll('a'))
+    const buttons = Array.from(document.querySelectorAll('button'))
+    const ctas = [...links, ...buttons]
 
-    links.forEach((el) => {
+    ctas.forEach((el) => {
       el.addEventListener('mouseenter', onLinkEnter)
       el.addEventListener('mouseleave', onLinkLeave)
     })
@@ -78,7 +78,7 @@ const TheCursor: React.FunctionComponent = () => {
 
   useEffect(() => {
     addEventListeners()
-    addLinkListeners()
+    addCtaListeners()
 
     return () => removeEventListeners()
   }, [router.pathname])
