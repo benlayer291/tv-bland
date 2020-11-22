@@ -1,5 +1,4 @@
 import { GetServerSideProps } from 'next'
-import { useRouter } from 'next/router'
 
 import { fetchSchedule } from '../services/tvMaze'
 

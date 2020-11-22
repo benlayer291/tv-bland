@@ -1,11 +1,13 @@
 import classNames from 'classnames'
 import ShowCard from '../showCard/showCard'
 
+import { InterfaceTvShow } from '../../types/interfaces'
+
 import styles from './showSchedule.module.css'
 
 type Props = {
   className?: string
-  shows: any[]
+  shows: InterfaceTvShow[]
 }
 
 const ShowSchedule: React.FunctionComponent<Props> = ({

@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import classNames from 'classnames'
 
 type Props = {
   children?: React.ReactNode
