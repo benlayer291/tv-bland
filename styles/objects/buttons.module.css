@@ -1,0 +1,25 @@
+/* ------------------------------------ *\
+  #Buttons
+\* ------------------------------------ */
+
+.button {
+  min-width: 160px;
+  padding: 0.75em 1.5em;
+  border: 2px solid $black;
+  font-size: 15px;
+  letter-spacing: 0.009em;
+  line-height: 1;
+  text-align: center;
+  transition: border-color 500ms ease;
+  user-select: none;
+
+  &:hover,
+  &:active {
+    border-color: $red;
+  }
+
+  @media (--sm) {
+    font-size: 20px;
+    letter-spacing: 0.013em;
+  }
+}

@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react'
 import classNames from 'classnames'
 
 import { InterfaceTvShow } from '../../types/interfaces'
@@ -5,6 +6,7 @@ import { InterfaceTvShow } from '../../types/interfaces'
 import ShowImage from '../showImage/showImage'
 import StarRating from '../starRating/starRating'
 
+import buttonStyles from '../../styles/objects/buttons.module.css'
 import wrapperStyles from '../../styles/objects/wrappers.module.css'
 import styles from './showHero.module.css'
 
@@ -13,8 +15,34 @@ type Props = {
 }
 
 const ShowHero: React.FunctionComponent<Props> = ({ show }: Props) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false)
+  const [maxHeight, setMaxHeight] = useState<number>(60)
+  const [isOverMaxHeight, setIsOverMaxHeight] = useState<boolean>(false)
+
+  const ref = useRef(null)
+  const maxHeightMin = 60
+
+  useEffect(() => {
+    const maxHeightMax = ref.current.scrollHeight
+
+    setMaxHeight(window.innerWidth >= 600 ? maxHeightMin : maxHeightMax)
+    setIsOverMaxHeight(maxHeightMax > maxHeightMin)
+  }, [])
+
+  const onToggleClick = () => {
+    const maxHeightMax = ref.current.scrollHeight
+
+    setMaxHeight(isOpen ? maxHeightMin : maxHeightMax)
+    setIsOpen(!isOpen)
+  }
+
   return (
-    <div className={styles.ShowHero}>
+    <div
+      className={classNames(styles.ShowHero, {
+        [styles['ShowHero--isOpen']]: isOpen,
+        [styles['ShowHero--isOverMaxHeight']]: isOverMaxHeight,
+      })}
+    >
       <div className={wrapperStyles.wrapper}>
         <div className={styles.ShowHero__container}>
           <div className={styles.ShowHero__imageContainer}>
@@ -29,20 +57,36 @@ const ShowHero: React.FunctionComponent<Props> = ({ show }: Props) => {
               />
             </div>
           </div>
-          <div className={styles.ShowHero__info}>
+          <div className={styles.ShowHero__infoContainer}>
             <StarRating
               className={styles.ShowHero__rating}
               rating={show.rating?.average}
               isLarge
               withText
             />
-            <div className={styles.ShowHero__text}>
-              <h1>{show.name}</h1>
+            <h1>{show.name}</h1>
+            <div
+              ref={ref}
+              className={styles.ShowHero__descriptionContainer}
+              style={{
+                maxHeight: maxHeight,
+              }}
+            >
               <div
                 className={classNames(styles.ShowHero__description)}
                 dangerouslySetInnerHTML={{ __html: show.summary }}
               />
             </div>
+            <button
+              className={classNames(
+                buttonStyles.button,
+                styles.ShowHero__toggle
+              )}
+              type="button"
+              onClick={onToggleClick}
+            >
+              {isOpen ? 'Read Less' : 'Read More'}
+            </button>
           </div>
         </div>
       </div>
