@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TheFallback /> should match snapshot 1`] = `
+<div>
+  <div
+    class="TheFallback"
+  >
+    <div
+      class="wrapper"
+    >
+      <div
+        class="TheFallback__text"
+      >
+        <h1>
+          Loading...
+        </h1>
+        <h2>
+          TV is just warming up... 📺
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+`;
