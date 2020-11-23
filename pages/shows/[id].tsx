@@ -21,23 +21,25 @@ const Show: React.FunctionComponent<Props> = ({ show }: Props) => {
   const router = useRouter()
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={transition}
-    >
+    <>
       <BaseMeta
         image={show.image?.medium || show.image?.original}
         urlPath={`shows/${router.query.id}`}
         title={show.name}
         description={removeHtmlTagsFromString(show.summary)}
       />
-      <ShowHero show={show} />
-      <BaseSection>
-        <ShowInfo show={show} />
-      </BaseSection>
-    </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={transition}
+      >
+        <ShowHero show={show} />
+        <BaseSection>
+          <ShowInfo show={show} />
+        </BaseSection>
+      </motion.div>
+    </>
   )
 }
 

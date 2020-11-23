@@ -17,19 +17,21 @@ type Props = {
 
 const Home: React.FunctionComponent<Props> = ({ shows }: Props) => {
   return (
-    <motion.div
-      onAnimationComplete={() => window.scrollTo(0, 0)}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={transition}
-    >
+    <>
       <BaseMeta />
-      <TheHomeHero />
-      <BaseSection>
-        <ShowSchedule shows={shows} />
-      </BaseSection>
-    </motion.div>
+      <motion.div
+        onAnimationComplete={() => window.scrollTo(0, 0)}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={transition}
+      >
+        <TheHomeHero />
+        <BaseSection>
+          <ShowSchedule shows={shows} />
+        </BaseSection>
+      </motion.div>
+    </>
   )
 }
 
