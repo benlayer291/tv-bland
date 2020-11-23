@@ -12,13 +12,13 @@
 
 .ShowSchedule__grid {
   display: grid;
-  grid-column-gap: 10px;
-  grid-row-gap: 20px;
+  grid-column-gap: Sbsu-sm;
+  grid-row-gap: $bsu;
   grid-template-columns: repeat(2, 1fr);
 
   @media (--xs) {
-    grid-column-gap: 50px;
-    grid-row-gap: 40px;
+    grid-column-gap: calc($bsu + $bsu-md);
+    grid-row-gap: $bsu-lg;
     grid-template-columns: repeat(4, 1fr);
   }
 
