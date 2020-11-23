@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
+import { AnimatePresence } from 'framer-motion'
 
 import TheLayout from '../components/theLayout/theLayout'
 const TheCursor = dynamic(() => import('../components/theCursor/theCursor'), {
@@ -8,11 +9,13 @@ const TheCursor = dynamic(() => import('../components/theCursor/theCursor'), {
 
 import '../styles/globals.css'
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+const MyApp = ({ Component, pageProps, router }: AppProps) => {
   return (
     <TheLayout>
       <TheCursor />
-      <Component {...pageProps} />
+      <AnimatePresence exitBeforeEnter>
+        <Component {...pageProps} key={router.route} />
+      </AnimatePresence>
     </TheLayout>
   )
 }

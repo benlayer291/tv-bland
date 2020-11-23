@@ -13,7 +13,7 @@ const BaseLink: React.FunctionComponent<Props> = ({
   href,
 }: Props) => {
   return (
-    <Link href={href} passHref>
+    <Link href={href} passHref={true} scroll={false}>
       <a className={className}>{children}</a>
     </Link>
   )

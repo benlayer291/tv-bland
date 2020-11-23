@@ -1,8 +1,11 @@
+import { useEffect, useState } from 'react'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 
 import { fetchSchedule, fetchShow } from '../../services/tvMaze'
 import { removeHtmlTagsFromString } from '../../utils/helpers'
+import { transition } from '../../utils/transitions'
 
 import { InterfaceTvShow } from '../../types/interfaces'
 
@@ -18,8 +21,25 @@ type Props = {
 const Show: React.FunctionComponent<Props> = ({ show }: Props) => {
   const router = useRouter()
 
+  const [canScroll, setCanScroll] = useState(true)
+
+  useEffect(() => {
+    if (canScroll === false) {
+      document.querySelector('body').classList.add('no-scroll')
+    } else {
+      document.querySelector('body').classList.remove('no-scroll')
+    }
+  }, [canScroll])
+
   return (
-    <>
+    <motion.div
+      onAnimationStart={() => setCanScroll(false)}
+      onAnimationComplete={() => setCanScroll(true)}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={transition}
+    >
       <BaseMeta
         image={show.image?.medium || show.image?.original}
         urlPath={`shows/${router.query.id}`}
@@ -30,7 +50,7 @@ const Show: React.FunctionComponent<Props> = ({ show }: Props) => {
       <BaseSection>
         <ShowInfo show={show} />
       </BaseSection>
-    </>
+    </motion.div>
   )
 }
 
