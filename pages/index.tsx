@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import { GetServerSideProps } from 'next'
 import { motion } from 'framer-motion'
 
@@ -17,19 +16,8 @@ type Props = {
 }
 
 const Home: React.FunctionComponent<Props> = ({ shows }: Props) => {
-  const [canScroll, setCanScroll] = useState(true)
-
-  useEffect(() => {
-    if (canScroll === false) {
-      document.querySelector('body').classList.add('no-scroll')
-    } else {
-      document.querySelector('body').classList.remove('no-scroll')
-    }
-  }, [canScroll])
-
   return (
     <motion.div
-      onAnimationStart={() => setCanScroll(false)}
       onAnimationComplete={() => window.scrollTo(0, 0)}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

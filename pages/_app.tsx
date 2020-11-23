@@ -13,7 +13,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => {
   return (
     <TheLayout>
       <TheCursor />
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence initial={false} exitBeforeEnter>
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
     </TheLayout>
