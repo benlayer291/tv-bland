@@ -8,6 +8,8 @@
     "start": "next start",
     "lint:scripts": "eslint . --ext .ts,.tsx",
     "lint:styles": "stylelint **/*.css",
+    "format:scripts": "prettier **/*.{ts,tsx} --write",
+    "format:styles": "stylelint **/*.css --fix",
     "ts:check": "tsc",
     "test": "jest",
     "test:watch": "jest --watch --passWithNoTests"
