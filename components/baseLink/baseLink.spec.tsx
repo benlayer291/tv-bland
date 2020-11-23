@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, RenderResult, screen } from '../../utils/test-utils'
+import { render, screen } from '../../utils/test-utils'
 
 import BaseLink from './baseLink'
 
@@ -8,24 +8,22 @@ const propsDefault = {
   href: '/',
 }
 
-const init = (props?: Record<string, unknown>): RenderResult => {
-  const propsInit = { ...propsDefault, ...props, children }
-
-  return render(<BaseLink {...propsInit} />)
-}
-
 describe('<BaseButton />', () => {
-  beforeEach(() => init())
-
   it('renders correctly', () => {
+    render(<BaseLink {...propsDefault} />)
+
     expect(screen.getByRole('link')).toBeInTheDocument()
   })
 
   it('renders children', () => {
+    render(<BaseLink {...propsDefault}>{children}</BaseLink>)
+
     expect(screen.getByRole('link')).toContainHTML(children)
   })
 
   it('matches snapshot', () => {
+    render(<BaseLink {...propsDefault} />)
+
     expect(screen.getByRole('link')).toMatchSnapshot()
   })
 })

@@ -3,10 +3,10 @@ import classnames from 'classnames'
 import styles from './showInfoText.module.css'
 
 type Props = {
-  className: string
+  className?: string
+  reverse?: boolean
   left: React.ReactNode
   right: React.ReactNode
-  reverse?: boolean
 }
 
 const ShowInfoText: React.FunctionComponent<Props> = ({

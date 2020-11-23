@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShowImage /> should match snapshot 1`] = `
+<div>
+  <div
+    class="ShowImage"
+    data-testid="show-image"
+  >
+    <div
+      class="BaseRevealImage"
+      data-testid="base-reveal-image"
+    >
+      <img
+        alt="Alt text"
+        class="BaseRevealImage__image"
+        height="295"
+        loading="lazy"
+        src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+        width="210"
+      />
+      <img
+        alt="Alt text"
+        class="BaseRevealImage__filter"
+        height="295"
+        loading="lazy"
+        src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+        width="210"
+      />
+    </div>
+  </div>
+</div>
+`;

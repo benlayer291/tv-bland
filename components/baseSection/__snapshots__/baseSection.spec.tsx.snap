@@ -1,13 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BaseButton /> matches snapshot 1`] = `
+exports[`<BaseSection /> matches snapshot 1`] = `
 <div>
   <section>
     <div
       class="wrapper"
-    >
-      Children
-    </div>
+    />
   </section>
 </div>
 `;

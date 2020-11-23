@@ -5,26 +5,24 @@ import BaseSection from './baseSection'
 
 const children = 'Children'
 
-const init = (props?: Record<string, unknown>): RenderResult => {
-  const propsInit = { ...props, children }
-
-  return render(<BaseSection {...propsInit} />)
-}
-
 describe('<BaseSection />', () => {
-  let wrapper: RenderResult
-
-  beforeEach(() => (wrapper = init()))
+  let el: RenderResult
 
   it('renders correctly', () => {
-    expect(wrapper.container).toBeInTheDocument()
+    el = render(<BaseSection />)
+
+    expect(el.container).toBeInTheDocument()
   })
 
   it('renders children', () => {
-    expect(wrapper.container).toContainHTML(children)
+    el = render(<BaseSection>{children}</BaseSection>)
+
+    expect(el.container).toContainHTML(children)
   })
 
   it('matches snapshot', () => {
-    expect(wrapper.container).toMatchSnapshot()
+    el = render(<BaseSection />)
+
+    expect(el.container).toMatchSnapshot()
   })
 })

@@ -18,39 +18,3 @@
   flex-flow: row wrap;
   margin-bottom: 0;
 }
-
-.ShowInfo__row {
-  display: flex;
-  height: 65px;
-  flex: 0 1 50%;
-  align-items: flex-start;
-
-  @media (--xs) {
-    height: 80px;
-    flex: 0 1 100%;
-    align-items: center;
-    border-bottom: 2px solid $black;
-    margin-bottom: 0;
-  }
-}
-
-.ShowInfo__row--full {
-  flex: 0 1 100%;
-  margin-bottom: 10px;
-
-  @media (--xs) {
-    margin-bottom: 0;
-  }
-}
-
-.ShowInfo__row--center {
-  align-items: center;
-}
-
-.ShowInfo__rowItem {
-  flex: 0 1 100%;
-}
-
-.ShowInfo__rowItem--noFlex {
-  flex: 0 0 auto;
-}

@@ -31,13 +31,14 @@ const StarRating: React.FunctionComponent<Props> = ({
 
   return (
     <div
+      data-testid="rating"
       className={classNames(styles.StarRating, className, {
         [styles['StarRating--is-large']]: isLarge,
       })}
     >
       <div className={styles.StarRating__icons}>{renderStars}</div>
       {withText && (
-        <span className={styles.StarRating__text}>
+        <span data-testid="rating-text" className={styles.StarRating__text}>
           {ratingOutOfFiveValue ? `${ratingOutOfFiveValue}/5` : 'No rating'}
         </span>
       )}

@@ -1,0 +1,804 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShowInfo /> should match snapshot 1`] = `
+<div>
+  <div
+    class="ShowInfo"
+  >
+    <div>
+      <h2>
+        Show info
+      </h2>
+      <ul
+        class="ShowInfo__container"
+      >
+        <div
+          class="ShowInfoRow"
+        >
+          <div
+            class="ShowInfoText ShowInfoRow__item"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Streamed on
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                CBS
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow"
+        >
+          <div
+            class="ShowInfoText ShowInfoRow__item"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Schedule
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Thursday at 22:00
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow"
+        >
+          <div
+            class="ShowInfoText ShowInfoRow__item"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Status
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Ended
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow"
+        >
+          <div
+            class="ShowInfoText ShowInfoRow__item"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Genres
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Drama, Science-Fiction, Thriller
+              </span>
+            </span>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Starring
+      </h2>
+      <ul
+        class="ShowInfo__container"
+      >
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage"
+              data-testid="base-reveal-image"
+            >
+              <img
+                alt="Portrait of Dale \\"Barbie\\" Barbara"
+                class="BaseRevealImage__image"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/3.jpg"
+                width="210"
+              />
+              <img
+                alt="Portrait of Dale \\"Barbie\\" Barbara"
+                class="BaseRevealImage__filter"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/3.jpg"
+                width="210"
+              />
+            </div>
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Dale "Barbie" Barbara
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Mike Vogel
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage"
+              data-testid="base-reveal-image"
+            >
+              <img
+                alt="Portrait of Julia Shumway"
+                class="BaseRevealImage__image"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/6.jpg"
+                width="210"
+              />
+              <img
+                alt="Portrait of Julia Shumway"
+                class="BaseRevealImage__filter"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/6.jpg"
+                width="210"
+              />
+            </div>
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Julia Shumway
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Rachelle Lefevre
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage"
+              data-testid="base-reveal-image"
+            >
+              <img
+                alt="Portrait of Junior Rennie"
+                class="BaseRevealImage__image"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/10.jpg"
+                width="210"
+              />
+              <img
+                alt="Portrait of Junior Rennie"
+                class="BaseRevealImage__filter"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/10.jpg"
+                width="210"
+              />
+            </div>
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Junior Rennie
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Alexander Koch
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage"
+              data-testid="base-reveal-image"
+            >
+              <img
+                alt="Portrait of Joe McAlister"
+                class="BaseRevealImage__image"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/7.jpg"
+                width="210"
+              />
+              <img
+                alt="Portrait of Joe McAlister"
+                class="BaseRevealImage__filter"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/7.jpg"
+                width="210"
+              />
+            </div>
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Joe McAlister
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Colin Ford
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage"
+              data-testid="base-reveal-image"
+            >
+              <img
+                alt="Portrait of Norrie Calvert-Hill"
+                class="BaseRevealImage__image"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/793.jpg"
+                width="210"
+              />
+              <img
+                alt="Portrait of Norrie Calvert-Hill"
+                class="BaseRevealImage__filter"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/793.jpg"
+                width="210"
+              />
+            </div>
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Norrie Calvert-Hill
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Mackenzie Lintz
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage"
+              data-testid="base-reveal-image"
+            >
+              <img
+                alt="Portrait of James \\"Big Jim\\" Rennie"
+                class="BaseRevealImage__image"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/2.jpg"
+                width="210"
+              />
+              <img
+                alt="Portrait of James \\"Big Jim\\" Rennie"
+                class="BaseRevealImage__filter"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/2.jpg"
+                width="210"
+              />
+            </div>
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                James "Big Jim" Rennie
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Dean Norris
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage"
+              data-testid="base-reveal-image"
+            >
+              <img
+                alt="Portrait of Sam Verdreaux"
+                class="BaseRevealImage__image"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/17/44108.jpg"
+                width="210"
+              />
+              <img
+                alt="Portrait of Sam Verdreaux"
+                class="BaseRevealImage__filter"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/17/44108.jpg"
+                width="210"
+              />
+            </div>
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Sam Verdreaux
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Eddie Cahill
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage"
+              data-testid="base-reveal-image"
+            >
+              <img
+                alt="Portrait of Phil Bushey"
+                class="BaseRevealImage__image"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/5.jpg"
+                width="210"
+              />
+              <img
+                alt="Portrait of Phil Bushey"
+                class="BaseRevealImage__filter"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/5.jpg"
+                width="210"
+              />
+            </div>
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Phil Bushey
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Nicholas Strong
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage"
+              data-testid="base-reveal-image"
+            >
+              <img
+                alt="Portrait of Angie McAlister"
+                class="BaseRevealImage__image"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/4.jpg"
+                width="210"
+              />
+              <img
+                alt="Portrait of Angie McAlister"
+                class="BaseRevealImage__filter"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/4.jpg"
+                width="210"
+              />
+            </div>
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Angie McAlister
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Britt Robertson
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage"
+              data-testid="base-reveal-image"
+            >
+              <img
+                alt="Portrait of Carolyn Hill"
+                class="BaseRevealImage__image"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/8.jpg"
+                width="210"
+              />
+              <img
+                alt="Portrait of Carolyn Hill"
+                class="BaseRevealImage__filter"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/8.jpg"
+                width="210"
+              />
+            </div>
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Carolyn Hill
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Aisha Hinds
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage"
+              data-testid="base-reveal-image"
+            >
+              <img
+                alt="Portrait of Deputy Linda Esquivel"
+                class="BaseRevealImage__image"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/792.jpg"
+                width="210"
+              />
+              <img
+                alt="Portrait of Deputy Linda Esquivel"
+                class="BaseRevealImage__filter"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/792.jpg"
+                width="210"
+              />
+            </div>
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Deputy Linda Esquivel
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Natalie Martinez
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage"
+              data-testid="base-reveal-image"
+            >
+              <img
+                alt="Portrait of Rebecca Pine"
+                class="BaseRevealImage__image"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/794.jpg"
+                width="210"
+              />
+              <img
+                alt="Portrait of Rebecca Pine"
+                class="BaseRevealImage__filter"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/794.jpg"
+                width="210"
+              />
+            </div>
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Rebecca Pine
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Karla Crome
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage"
+              data-testid="base-reveal-image"
+            >
+              <img
+                alt="Portrait of Eva Sinclair"
+                class="BaseRevealImage__image"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/17/44109.jpg"
+                width="210"
+              />
+              <img
+                alt="Portrait of Eva Sinclair"
+                class="BaseRevealImage__filter"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/17/44109.jpg"
+                width="210"
+              />
+            </div>
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Eva Sinclair
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Kylie Bunbury
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage"
+              data-testid="base-reveal-image"
+            >
+              <img
+                alt="Portrait of Dodee Weaver"
+                class="BaseRevealImage__image"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/9.jpg"
+                width="210"
+              />
+              <img
+                alt="Portrait of Dodee Weaver"
+                class="BaseRevealImage__filter"
+                height="295"
+                loading="lazy"
+                src="//static.tvmaze.com/uploads/images/medium_portrait/0/9.jpg"
+                width="210"
+              />
+            </div>
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Dodee Weaver
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Jolene Purdy
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+        >
+          <div
+            class="ShowInfoImage ShowInfoRow__item--noFlex"
+          >
+            <div
+              class="BaseRevealImage BaseRevealImage--no-image"
+              data-testid="base-reveal-image"
+            />
+          </div>
+          <div
+            class="ShowInfoText ShowInfoRow__item"
+          >
+            <span
+              class="ShowInfoText__left"
+            >
+              <span>
+                Sheriff Duke Perkins
+              </span>
+            </span>
+            <span
+              class="ShowInfoText__right"
+            >
+              <span>
+                Jeff Fahey
+              </span>
+            </span>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

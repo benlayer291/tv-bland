@@ -24,9 +24,9 @@ export interface InterfaceTvShowNetwork {
 }
 
 export interface InterfaceTvShowExternals {
-  tvrage: string | null
+  tvrage: number | null
   thetvdb: number | null
-  imbd: string | null
+  imdb: string | null
 }
 
 export interface InterfaceTvShowImage {
@@ -49,12 +49,12 @@ export interface InterfaceTvLinks {
 }
 
 export interface InterfaceTvShowPerson {
-  id: string
+  id: number
   url: string
   name: string
   country: InterfaceTvShowCountry
-  code: string
-  timezone: string
+  code?: string
+  timezone?: string
   birthday: string
   deathday: string | null
   gender: string

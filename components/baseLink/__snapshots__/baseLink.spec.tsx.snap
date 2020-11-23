@@ -3,7 +3,5 @@
 exports[`<BaseButton /> matches snapshot 1`] = `
 <a
   href="/"
->
-  Children
-</a>
+/>
 `;
