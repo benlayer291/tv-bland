@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TheFooter /> should match snapshot 1`] = `
+<div>
+  <footer
+    class="TheFooter"
+  >
+    <div
+      class="wrapper"
+    >
+      <p
+        class="t-small TheFooter__text"
+      >
+        <a
+          href="https://github.com/benlayer291"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          Build
+        </a>
+         
+        by
+         
+        <a
+          href="https://www.benlayer.com"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          Ben Layer
+        </a>
+      </p>
+    </div>
+  </footer>
+</div>
+`;

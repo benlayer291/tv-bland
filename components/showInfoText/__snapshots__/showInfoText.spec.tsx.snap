@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShowInfoText /> given "reverse" is true should match snapshot in reverse 1`] = `
+<div>
+  <div
+    class="ShowInfoText ShowInfoText--reverse"
+  >
+    <span
+      class="ShowInfoText__left"
+    >
+      Left
+    </span>
+    <span
+      class="ShowInfoText__right"
+    >
+      Right
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<ShowInfoText /> should match snapshot 1`] = `
+<div>
+  <div
+    class="ShowInfoText"
+  >
+    <span
+      class="ShowInfoText__left"
+    >
+      Left
+    </span>
+    <span
+      class="ShowInfoText__right"
+    >
+      Right
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BaseSection /> matches snapshot 1`] = `
+<div>
+  <section>
+    <div
+      class="wrapper"
+    />
+  </section>
+</div>
+`;

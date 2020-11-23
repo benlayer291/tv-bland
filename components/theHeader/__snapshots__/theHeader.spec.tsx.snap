@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TheHeader /> should match snapshot 1`] = `
+<div>
+  <header
+    class="TheHeader"
+  >
+    <div
+      class="wrapper"
+    >
+      <a
+        class="t-h1"
+        href="/"
+      >
+        <strong>
+          TV Bland
+        </strong>
+      </a>
+    </div>
+  </header>
+</div>
+`;

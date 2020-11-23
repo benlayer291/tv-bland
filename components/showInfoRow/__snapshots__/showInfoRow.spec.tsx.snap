@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShowInfoRow /> given no image is passed should match snapshot 1`] = `
+<div>
+  <div
+    class="ShowInfoRow"
+  >
+    <div
+      class="ShowInfoText ShowInfoRow__item"
+    >
+      <span
+        class="ShowInfoText__left"
+      >
+        <span>
+          Left
+        </span>
+      </span>
+      <span
+        class="ShowInfoText__right"
+      >
+        <span>
+          Right
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ShowInfoRow /> should match snapshot 1`] = `
+<div>
+  <div
+    class="ShowInfoRow ShowInfoRow--center ShowInfoRow--full"
+  >
+    <div
+      class="ShowInfoImage ShowInfoRow__item--noFlex"
+    >
+      <div
+        class="BaseRevealImage"
+        data-testid="base-reveal-image"
+      >
+        <img
+          alt="Portrait of Left"
+          class="BaseRevealImage__image"
+          height="295"
+          loading="lazy"
+          src="imageSrc"
+          width="210"
+        />
+        <img
+          alt="Portrait of Left"
+          class="BaseRevealImage__filter"
+          height="295"
+          loading="lazy"
+          src="imageSrc"
+          width="210"
+        />
+      </div>
+    </div>
+    <div
+      class="ShowInfoText ShowInfoRow__item ShowInfoText--reverse"
+    >
+      <span
+        class="ShowInfoText__left"
+      >
+        <span>
+          Left
+        </span>
+      </span>
+      <span
+        class="ShowInfoText__right"
+      >
+        <span>
+          Right
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+`;

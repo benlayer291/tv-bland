@@ -2,8 +2,7 @@ import classNames from 'classnames'
 
 import { InterfaceTvShow } from '../../types/interfaces'
 
-import ShowInfoText from '../showInfoText/showInfoText'
-import ShowInfoImage from '../showInfoImage/showInfoImage'
+import ShowInfoRow from '../showInfoRow/showInfoRow'
 
 import styles from './showInfo.module.css'
 
@@ -39,31 +38,7 @@ const ShowInfo: React.FunctionComponent<Props> = ({
     return rowsData.map((rowData, index) => {
       if (!rowData.left || !rowData.right) return
 
-      return (
-        <li
-          key={index}
-          className={classNames(styles.ShowInfo__row, {
-            [styles['ShowInfo__row--center']]: 'image' in rowData,
-            [styles['ShowInfo__row--full']]: 'image' in rowData,
-          })}
-        >
-          {'image' in rowData && (
-            <ShowInfoImage
-              className={styles['ShowInfo__rowItem--noFlex']}
-              src={rowData.image}
-              alt={`Portrait of ${rowData.left}`}
-              height={295}
-              width={210}
-            />
-          )}
-          <ShowInfoText
-            className={styles.ShowInfo__rowItem}
-            reverse={rowData.image !== undefined}
-            left={<span>{rowData.left}</span>}
-            right={<span>{rowData.right}</span>}
-          />
-        </li>
-      )
+      return <ShowInfoRow key={index} row={rowData} />
     })
   }
 

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Star /> given "isActive" is true matches snapshot 1`] = `
+<svg
+  class="Star Star--is-active"
+  data-testid="star"
+  viewBox="0 0 14 12"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    clip-rule="evenodd"
+    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+    fill-rule="evenodd"
+  />
+</svg>
+`;
+
+exports[`<Star /> matches snapshot 1`] = `
+<svg
+  class="Star"
+  data-testid="star"
+  viewBox="0 0 14 12"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    clip-rule="evenodd"
+    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+    fill-rule="evenodd"
+  />
+</svg>
+`;

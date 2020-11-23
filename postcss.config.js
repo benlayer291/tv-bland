@@ -1,5 +1,5 @@
-const customMedia = require('./config/postcss/custom-media')
-const variables = require('./config/postcss/variables')
+const customMedia = require('./config/postcss/custom-media.js')
+const variables = require('./config/postcss/variables.js')
 
 module.exports = {
   plugins: {

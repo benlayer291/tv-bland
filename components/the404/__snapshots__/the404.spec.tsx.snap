@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<The404 /> should match snapshot 1`] = `
+<div>
+  <div
+    class="The404"
+  >
+    <div
+      class="wrapper"
+    >
+      <div
+        class="The404__text"
+      >
+        <h1>
+          404
+        </h1>
+        <h2>
+          Uh oh... looks like that wasn't scheduled 😬
+        </h2>
+        <p>
+          <a
+            href="/"
+          >
+            Return home
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

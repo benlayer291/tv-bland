@@ -12,6 +12,7 @@ const Star: React.FunctionComponent<Props> = ({
 }: Props) => {
   return (
     <svg
+      data-testid="star"
       className={classNames(styles.Star, className, {
         [styles['Star--is-active']]: isActive,
       })}

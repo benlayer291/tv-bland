@@ -3,10 +3,10 @@ import classNames from 'classnames'
 
 import { InterfaceTvShow } from '../../types/interfaces'
 
+import BaseButton from '../baseButton/baseButton'
 import ShowImage from '../showImage/showImage'
 import StarRating from '../starRating/starRating'
 
-import buttonStyles from '../../styles/objects/buttons.module.css'
 import wrapperStyles from '../../styles/objects/wrappers.module.css'
 import styles from './showHero.module.css'
 
@@ -77,16 +77,11 @@ const ShowHero: React.FunctionComponent<Props> = ({ show }: Props) => {
                 dangerouslySetInnerHTML={{ __html: show.summary }}
               />
             </div>
-            <button
-              className={classNames(
-                buttonStyles.button,
-                styles.ShowHero__toggle
-              )}
-              type="button"
+            <BaseButton
+              className={styles.ShowHero__toggle}
               onClick={onToggleClick}
-            >
-              {isOpen ? 'Read Less' : 'Read More'}
-            </button>
+              text={isOpen ? 'Read Less' : 'Read More'}
+            />
           </div>
         </div>
       </div>
