@@ -33,7 +33,7 @@ html,
 body,
 html *,
 body *{
-  cursor: none;
+  /* cursor: none; */
 }
 
 ::selection {

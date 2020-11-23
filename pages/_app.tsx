@@ -1,4 +1,3 @@
-import React from 'react'
 import { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
 import { AnimatePresence } from 'framer-motion'
@@ -12,14 +11,14 @@ import '../styles/globals.css'
 
 const MyApp = ({ Component, pageProps, router }: AppProps) => {
   return (
-    <TheLayout>
-      <TheCursor />
-      <AnimatePresence initial={false} exitBeforeEnter={true}>
-        <React.Fragment key={router.route}>
-          <Component {...pageProps} />
-        </React.Fragment>
-      </AnimatePresence>
-    </TheLayout>
+    <>
+      {/* <TheCursor /> */}
+      <TheLayout>
+        <AnimatePresence initial={false} exitBeforeEnter>
+          <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
+      </TheLayout>
+    </>
   )
 }
 
