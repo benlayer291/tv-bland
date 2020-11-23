@@ -8,12 +8,19 @@ import StarRating from '../starRating/starRating'
 import styles from './showCard.module.css'
 
 type Props = {
+  className?: string
   show: InterfaceTvShow
 }
 
-const ShowCard: React.FunctionComponent<Props> = ({ show }: Props) => {
+const ShowCard: React.FunctionComponent<Props> = ({
+  className,
+  show,
+}: Props) => {
   return (
-    <BaseLink className={styles.ShowCard} href={`/shows/${show.id}`}>
+    <BaseLink
+      className={classNames(styles.ShowCard, className)}
+      href={`/shows/${show.id}`}
+    >
       <div className={styles.ShowCard__main}>
         <ShowImage
           className={styles.ShowCard__image}

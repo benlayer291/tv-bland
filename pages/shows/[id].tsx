@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 
 import { fetchSchedule, fetchShow } from '../../services/tvMaze'
 import { removeHtmlTagsFromString } from '../../utils/helpers'
+import { transition } from '../../utils/transitions'
 
 import { InterfaceTvShow } from '../../types/interfaces'
 
@@ -37,7 +38,7 @@ const Show: React.FunctionComponent<Props> = ({ show }: Props) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ ease: 'easeIn', duration: 0.75 }}
+      transition={transition}
     >
       <BaseMeta
         image={show.image?.medium || show.image?.original}

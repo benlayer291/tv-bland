@@ -1,11 +1,13 @@
 import classNames from 'classnames'
 import ShowCard from '../showCard/showCard'
 
+import { InterfaceTvShow } from '../../types/interfaces'
+
 import styles from './showSchedule.module.css'
 
 type Props = {
   className?: string
-  shows: any[]
+  shows: InterfaceTvShow[]
 }
 
 const ShowSchedule: React.FunctionComponent<Props> = ({
@@ -14,9 +16,11 @@ const ShowSchedule: React.FunctionComponent<Props> = ({
 }: Props) => {
   const renderShows = shows.map((show, index) => {
     return (
-      <div key={`${show.id}-${index}`} className={styles.ShowSchedule__item}>
-        <ShowCard show={show} />
-      </div>
+      <ShowCard
+        show={show}
+        key={`${show.id}-${index}`}
+        className={styles.ShowSchedule__item}
+      />
     )
   })
   return (

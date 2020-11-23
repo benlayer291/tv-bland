@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { GetServerSideProps } from 'next'
-import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 
 import { fetchSchedule } from '../services/tvMaze'
+import { transition } from '../utils/transitions'
 
 import { InterfaceTvShow } from '../types/interfaces'
 
@@ -34,7 +34,7 @@ const Home: React.FunctionComponent<Props> = ({ shows }: Props) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ ease: 'easeIn', duration: 0.75 }}
+      transition={transition}
     >
       <BaseMeta />
       <TheHomeHero />
