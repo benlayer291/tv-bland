@@ -19,7 +19,7 @@
 
 .ShowInfoRow--full {
   flex: 0 1 100%;
-  margin-bottom: 10px;
+  margin-bottom: $bsu-sm;
 
   @media (--xs) {
     margin-bottom: 0;

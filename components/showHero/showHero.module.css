@@ -3,9 +3,9 @@
 \* ------------------------------------ */
 
 .ShowHero {
-  padding-bottom: 50px;
+  padding-bottom: calc($bsu + $bsu-md);
   border-bottom: 2px solid $black;
-  margin-bottom: 40px;
+  margin-bottom: calc($bsu-lg);
 
   @media (--xs) {
     padding-bottom: 0;
@@ -18,8 +18,8 @@
 
   @media (--xs) {
     display: grid;
-    margin-bottom: -30px;
-    grid-column-gap: 50px;
+    margin-bottom: calc(-1 * $bsu-md);
+    grid-column-gap: calc($bsu + $bsu-md);
     grid-row-gap: 0;
     grid-template-columns: 272px auto;
   }
@@ -39,13 +39,13 @@
   max-width: 700px;
 
   @media (--xs) {
-    padding-bottom: 60px;
-    margin-top: 30px;
+    padding-bottom: calc($bsu-md * 2);
+    margin-top: $bsu-md;
   }
 }
 
 .ShowHero__rating {
-  margin-bottom: 20px;
+  margin-bottom: $bsu;
 }
 
 .ShowHero__descriptionContainer {

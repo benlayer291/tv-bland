@@ -8,12 +8,12 @@
   overflow: hidden;
   width: 65px;
   height: 65px;
-  margin-right: 10px;
+  margin-right: $bsu-sm;
   border-radius: 50%;
 
   @media (--sm) {
     width: 58px;
     height: 58px;
-    margin-right: 50px;
+    margin-right: calc($bsu + $bsu-md);
   }
 }
