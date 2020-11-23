@@ -13,6 +13,10 @@ export const fetchSchedule = async (
   const { data } = await axiosClient({
     url,
     method: 'GET',
+  }).catch((e) => {
+    console.error(e)
+
+    return { data: null }
   })
 
   return data
@@ -23,6 +27,10 @@ export const fetchShow = async (id: string): Promise<InterfaceTvShow> => {
   const { data } = await axiosClient({
     url,
     method: 'GET',
+  }).catch((e) => {
+    console.error(e)
+
+    return { data: null }
   })
 
   return data

@@ -6,10 +6,11 @@ import { removeHtmlTagsFromString } from '../../utils/helpers'
 
 import { InterfaceTvShow } from '../../types/interfaces'
 
-import ShowHero from '../../components/showHero/showHero'
-import BaseSection from '../../components/baseSection/baseSection'
-import ShowInfo from '../../components/showInfo/showInfo'
 import BaseMeta from '../../components/baseMeta/baseMeta'
+import BaseSection from '../../components/baseSection/baseSection'
+import ShowHero from '../../components/showHero/showHero'
+import ShowInfo from '../../components/showInfo/showInfo'
+import TheFallback from '../../components/theFallback/theFallback'
 
 type Props = {
   show: InterfaceTvShow
@@ -17,6 +18,12 @@ type Props = {
 
 const Show: React.FunctionComponent<Props> = ({ show }: Props) => {
   const router = useRouter()
+
+  // If the page is not yet generated, this will be displayed
+  // initially until getStaticProps() finishes running
+  if (router.isFallback) {
+    return <TheFallback />
+  }
 
   return (
     <>
@@ -44,7 +51,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   }
 }
 
@@ -52,10 +59,17 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const id = Array.isArray(params?.id) ? params?.id?.[0] : params?.id
   const show = await fetchShow(id as string)
 
+  if (!show) {
+    return {
+      notFound: true,
+    }
+  }
+
   return {
     props: {
       show,
     },
+    revalidate: 1,
   }
 }
 
