@@ -2,12 +2,9 @@ import { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
 
 import TheLayout from '../components/theLayout/theLayout'
-const TheCursorV2 = dynamic(
-  () => import('../components/theCursorV2/theCursorV2'),
-  {
-    ssr: false,
-  }
-)
+const TheCursor = dynamic(() => import('../components/theCursor/theCursor'), {
+  ssr: false,
+})
 import CursorContextProvider from '../context/cursorContext'
 
 import '../styles/globals.css'
@@ -17,7 +14,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <CursorContextProvider>
       <TheLayout>
         <Component {...pageProps} />
-        <TheCursorV2 />
+        <TheCursor />
       </TheLayout>
     </CursorContextProvider>
   )

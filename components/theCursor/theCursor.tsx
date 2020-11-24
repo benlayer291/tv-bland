@@ -1,6 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import classNames from 'classnames'
+
+import { CursorContext } from '../../context/cursorContext'
+
 import { checkDeviceIsMobile as isMobile } from '../../utils/helpers'
 import { InterfacePositionCoordinates } from '../../types/interfaces'
 
@@ -11,87 +14,70 @@ const TheCursor: React.FunctionComponent = () => {
 
   const router = useRouter()
 
+  const [isActive] = useContext(CursorContext)
   const [position, setPosition] = useState<InterfacePositionCoordinates>({
     x: 0,
     y: 0,
   })
-  const [isHidden, setHidden] = useState<boolean>(false)
+
+  const updatePosition = (e) => setPosition({ x: e.clientX, y: e.clientY })
+
+  useEffect(() => {
+    document.addEventListener('mousemove', updatePosition)
+    document.addEventListener('mouseenter', updatePosition)
+
+    return () => {
+      document.removeEventListener('mousemove', updatePosition)
+      document.removeEventListener('mouseenter', updatePosition)
+    }
+  }, [router.pathname])
+
   const [isClicked, setClicked] = useState<boolean>(false)
-  const [isHovered, setHovered] = useState<boolean>(false)
 
-  const onMouseMove = (e) => {
-    setPosition({ x: e.clientX, y: e.clientY })
-  }
-  const onMouseEnter = () => {
-    setHidden(false)
-  }
-  const onMouseLeave = () => {
-    setHidden(true)
-  }
-  const onMouseUp = () => {
-    setClicked(false)
-  }
-  const onMouseDown = () => {
-    setClicked(true)
-  }
-  const onLinkEnter = () => {
-    setHovered(true)
-  }
-  const onLinkLeave = () => {
-    setHovered(false)
-  }
-  const onRouteChange = () => {
-    setHovered(false)
-    setClicked(false)
-  }
+  const onMouseUp = () => setClicked(false)
+  const onMouseDown = () => setClicked(true)
 
-  const addEventListeners = () => {
-    document.addEventListener('mousemove', onMouseMove)
-    document.addEventListener('mouseenter', onMouseEnter)
-    document.addEventListener('mouseleave', onMouseLeave)
+  useEffect(() => {
     document.addEventListener('mouseup', onMouseUp)
     document.addEventListener('mousedown', onMouseDown)
 
-    router.events.on('routeChangeComplete', onRouteChange)
-  }
+    return () => {
+      document.removeEventListener('mouseup', onMouseUp)
+      document.removeEventListener('mousedown', onMouseDown)
+    }
+  }, [router.pathname])
 
-  const addCtaListeners = () => {
-    const links = Array.from(document.querySelectorAll('a'))
-    const buttons = Array.from(document.querySelectorAll('button'))
-    const ctas = [...links, ...buttons]
+  const [isHidden, setHidden] = useState<boolean>(false)
 
-    ctas.forEach((el) => {
-      el.addEventListener('mouseenter', onLinkEnter)
-      el.addEventListener('mouseleave', onLinkLeave)
-    })
-  }
-
-  const removeEventListeners = () => {
-    document.removeEventListener('mousemove', onMouseMove)
-    document.removeEventListener('mouseenter', onMouseEnter)
-    document.removeEventListener('mouseleave', onMouseLeave)
-    document.removeEventListener('mouseup', onMouseUp)
-    document.removeEventListener('mousedown', onMouseDown)
-
-    router.events.off('routeChangeComplete', onRouteChange)
-  }
+  const onMouseEnter = () => setHidden(false)
+  const onMouseLeave = () => setHidden(true)
 
   useEffect(() => {
-    addEventListeners()
-    addCtaListeners()
+    document.addEventListener('mouseenter', onMouseEnter)
+    document.addEventListener('mouseleave', onMouseLeave)
 
-    return () => removeEventListeners()
+    return () => {
+      document.removeEventListener('mouseenter', onMouseEnter)
+      document.removeEventListener('mouseleave', onMouseLeave)
+    }
   }, [router.pathname])
 
   return (
     <div
       className={classNames(styles.TheCursor, {
         [styles['TheCursor--hidden']]: isHidden,
-        [styles['TheCursor--clicked']]: isClicked,
-        [styles['TheCursor--hovered']]: isHovered,
+        [styles['TheCursor--hovered']]: isActive,
       })}
-      style={{ left: position.x, top: position.y }}
-    />
+    >
+      <span
+        className={styles.TheCursor__pointer}
+        style={{
+          transform: `translate(-50%, -50%) translate3d(${position.x}px, ${
+            position.y
+          }px, 0) scale(${isClicked ? 0.8 : 1})`,
+        }}
+      ></span>
+    </div>
   )
 }
 
