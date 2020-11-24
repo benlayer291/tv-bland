@@ -69,8 +69,9 @@ Components have been unit tested using Jest and React Testing Library. As mentio
 ### Cross browser
 The application has been tested on Chrome and Chrome on Android but not extensively across the usual candidates.
 
-## Performance and Audits
-The site has been audited with Google Lighthouse and some reasonable improvements made on performance, SEO, accesibility and PWA. I ws interested to see performance marked down on excessive DOM nodes, given more time this is something I'd like to look into further as I assume it is aconsequence of React?
+## PWA, Performance and Audits
+The site has has the `next-pwa` module added to provide some PWA functionality, it is 2020 after all.
+The site has also been audited with Google Lighthouse and some reasonable improvements made on performance, SEO, accesibility and PWA. I ws interested to see performance marked down on excessive DOM nodes, given more time this is something I'd like to look into further as I assume it is aconsequence of React?
 
 ## CI/CD
 I'd always wanted to setup Github Actions so this seemed a good time to try. As such we have an action that ensures upon Pull Requesting into `develop` the code is linted, tested and built. If this was a collaborative repo, I would limit the ability to merge unless these checks had passed. It ensures (to an extent) code quality and goes hand-in-hand with the pre-commit checks that run locally.
