@@ -5,7 +5,7 @@
 .TheHomeHero {
   height: 185px;
   border-bottom: 2px solid $black;
-  margin-bottom: Sbsu-lg;
+  margin-bottom: $bsu-lg;
 
   @media (--sm) {
     height: 370px;
