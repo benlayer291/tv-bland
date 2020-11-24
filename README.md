@@ -99,3 +99,9 @@ I was excited to try Next's new `Image` component but upon replacing the usual `
 ### Page transition
 I setup page transitions using Framer Motion and implemented a simple fade effect. I then started digging further through documentation to implement something less basic but upon deploying to Vercel noticed that on page transition, certain stylesheets go missing and the layout of the application breaks. I found a few issues referencing this but not solution and in the interest of time simply did not merge any of this work. It can be seen on the `feature/transitions` branch. The fact that the application does not feature any motion is clearly evident and disappointing. It is again interesting comparing this to the ease of setting these  up in Nuxt, both simple and complex.
 
+### Enhanced functionality
+It would be good to continue iterating on this application and adding features such as:
+- Pagination
+- Search
+- Marking shows as viewed and favorite
+
