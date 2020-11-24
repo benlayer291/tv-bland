@@ -1,11 +1,10 @@
-import TheLayout from '../components/theLayout/theLayout'
 import StarRating from '../components/starRating/starRating'
 import BaseSection from '../components/baseSection/baseSection'
 import StyleguideColors from '../components/styleguideColors/styleguideColors'
 
 const Styleguide: React.FunctionComponent = () => {
   return (
-    <TheLayout>
+    <>
       <BaseSection>
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
@@ -31,7 +30,7 @@ const Styleguide: React.FunctionComponent = () => {
         <StarRating rating={2} />
         <StarRating rating={10} withText isLarge />
       </BaseSection>
-    </TheLayout>
+    </>
   )
 }
 
