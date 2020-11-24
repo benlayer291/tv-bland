@@ -1,0 +1,18 @@
+/* ------------------------------------ *\
+  #TheFooter
+\* ------------------------------------ */
+
+.TheFooter {
+  width: 100%;
+  padding-top: $bsu-lg;
+  padding-bottom: $bsu;
+
+  @media (--sm) {
+    padding-top: $bsu-xl;
+    padding-bottom: $bsu-lg;
+  }
+}
+
+.TheFooter__text {
+  margin-bottom: 0;
+}

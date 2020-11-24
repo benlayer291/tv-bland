@@ -1,0 +1,55 @@
+/* ------------------------------------ *\
+  #BaseRevealImage
+\* ------------------------------------ */
+
+.BaseRevealImage {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  max-width: 100%;
+  height: 0;
+  height: auto;
+  padding-bottom: 150%;
+  background-color: $grey;
+
+  &.BaseRevealImage--no-image {
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $black;
+      content: '';
+    }
+  }
+}
+
+.BaseRevealImage__image,
+.BaseRevealImage__filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 2000ms ease;
+}
+
+.BaseRevealImage__image {
+  opacity: 0;
+
+  .BaseRevealImage--revealed & {
+    opacity: 1;
+  }
+}
+
+.BaseRevealImage__filter {
+  filter: grayscale(1);
+  opacity: 1;
+
+  .BaseRevealImage--revealed & {
+    opacity: 0;
+  }
+}

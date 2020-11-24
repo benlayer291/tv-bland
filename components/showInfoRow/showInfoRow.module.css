@@ -1,0 +1,39 @@
+/* ------------------------------------ *\
+  #ShowInfoRow
+\* ------------------------------------ */
+
+.ShowInfoRow {
+  display: flex;
+  height: 65px;
+  flex: 0 1 50%;
+  align-items: flex-start;
+
+  @media (--xs) {
+    height: 80px;
+    flex: 0 1 100%;
+    align-items: center;
+    border-bottom: 2px solid $black;
+    margin-bottom: 0;
+  }
+}
+
+.ShowInfoRow--full {
+  flex: 0 1 100%;
+  margin-bottom: $bsu-sm;
+
+  @media (--xs) {
+    margin-bottom: 0;
+  }
+}
+
+.ShowInfoRow--center {
+  align-items: center;
+}
+
+.ShowInfoRow__item {
+  flex: 0 1 100%;
+}
+
+.ShowInfoRow__item--noFlex {
+  flex: 0 0 auto;
+}

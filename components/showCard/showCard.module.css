@@ -1,0 +1,33 @@
+/* ------------------------------------ *\
+  #ShowCard
+\* ------------------------------------ */
+
+.ShowCard {
+  display: block;
+  width: 100%;
+}
+
+.ShowCard__image {
+  margin-bottom: $bsu-sm;
+  transition: border-color 500ms ease;
+
+  .ShowCard:hover &,
+  .ShowCard:active & {
+    border-color: $red;
+  }
+}
+
+.ShowCard__rating {
+  display: none;
+  margin-bottom: $bsu-sm;
+
+  @media (--xs) {
+    display: block;
+  }
+}
+
+.ShowCard__text {
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 1.33;
+}

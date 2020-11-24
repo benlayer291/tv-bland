@@ -1,0 +1,16 @@
+/* ------------------------------------ *\
+  #Star
+\* ------------------------------------ */
+
+.Star {
+  display: inline-block;
+  width: 1.111em;
+  height: 1em;
+  fill: $grey;
+  font-size: inherit;
+  vertical-align: -0.025em;
+}
+
+.Star--is-active {
+  fill: $black;
+}

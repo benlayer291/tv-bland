@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TheHomeHero /> should match snapshot 1`] = `
+<div>
+  <div
+    class="TheHomeHero"
+  >
+    <div
+      class="wrapper"
+    >
+      <div
+        class="TheHomeHero__text"
+      >
+        <h1
+          class="t-h2"
+        >
+          TV Show and web series database.
+        </h1>
+        <h2>
+          Create personalised schedules. Episode guide, cast, crew and character information.
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+`;

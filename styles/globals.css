@@ -1,16 +1,8 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import "./base/normalize";
+@import "./base/reset";
+@import "./base/box-sizing";
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import "./settings/type";
+@import "./settings/rhythm";
 
-* {
-  box-sizing: border-box;
-}
+@import "./layout/page";

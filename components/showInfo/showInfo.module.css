@@ -1,0 +1,20 @@
+/* ------------------------------------ *\
+  #ShowInfo
+\* ------------------------------------ */
+
+.ShowInfo {
+  display: grid;
+  grid-column-gap: calc($bsu + $bsu-md);
+  grid-row-gap: calc(($bsu + $bsu-md) / 2);
+  grid-template-columns: repeat(1, 1fr);
+
+  @media (--xs) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.ShowInfo__container {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 0;
+}

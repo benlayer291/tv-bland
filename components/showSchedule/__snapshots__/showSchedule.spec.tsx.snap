@@ -1,0 +1,1404 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShowSchedule /> given no shows are passed should match no shows snapshot 1`] = `
+<div>
+  <div
+    class="ShowSchedule"
+  >
+    <h2
+      class="ShowSchedule__title"
+    >
+      Last Added Shows
+    </h2>
+    <div
+      class="ShowSchedule__grid"
+    />
+  </div>
+</div>
+`;
+
+exports[`<ShowSchedule /> should match snapshot 1`] = `
+<div>
+  <div
+    class="ShowSchedule"
+  >
+    <h2
+      class="ShowSchedule__title"
+    >
+      Last Added Shows
+    </h2>
+    <div
+      class="ShowSchedule__grid"
+    >
+      <div
+        class="ShowSchedule__item"
+        data-testid="show-schedule-show"
+      >
+        <a
+          class="ShowCard"
+          href="/shows/1"
+        >
+          <div
+            class="ShowCard__main"
+          >
+            <div
+              class="ShowImage ShowCard__image"
+              data-testid="show-image"
+            >
+              <div
+                class="BaseRevealImage"
+                data-testid="base-reveal-image"
+              >
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__image"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__filter"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+              </div>
+            </div>
+            <div
+              class="StarRating ShowCard__rating"
+              data-testid="rating"
+            >
+              <div
+                class="StarRating__icons"
+              >
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="t-para ShowCard__text"
+            >
+              Under the Dome
+            </h3>
+          </div>
+        </a>
+      </div>
+      <div
+        class="ShowSchedule__item"
+        data-testid="show-schedule-show"
+      >
+        <a
+          class="ShowCard"
+          href="/shows/1"
+        >
+          <div
+            class="ShowCard__main"
+          >
+            <div
+              class="ShowImage ShowCard__image"
+              data-testid="show-image"
+            >
+              <div
+                class="BaseRevealImage"
+                data-testid="base-reveal-image"
+              >
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__image"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__filter"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+              </div>
+            </div>
+            <div
+              class="StarRating ShowCard__rating"
+              data-testid="rating"
+            >
+              <div
+                class="StarRating__icons"
+              >
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="t-para ShowCard__text"
+            >
+              Under the Dome
+            </h3>
+          </div>
+        </a>
+      </div>
+      <div
+        class="ShowSchedule__item"
+        data-testid="show-schedule-show"
+      >
+        <a
+          class="ShowCard"
+          href="/shows/1"
+        >
+          <div
+            class="ShowCard__main"
+          >
+            <div
+              class="ShowImage ShowCard__image"
+              data-testid="show-image"
+            >
+              <div
+                class="BaseRevealImage"
+                data-testid="base-reveal-image"
+              >
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__image"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__filter"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+              </div>
+            </div>
+            <div
+              class="StarRating ShowCard__rating"
+              data-testid="rating"
+            >
+              <div
+                class="StarRating__icons"
+              >
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="t-para ShowCard__text"
+            >
+              Under the Dome
+            </h3>
+          </div>
+        </a>
+      </div>
+      <div
+        class="ShowSchedule__item"
+        data-testid="show-schedule-show"
+      >
+        <a
+          class="ShowCard"
+          href="/shows/1"
+        >
+          <div
+            class="ShowCard__main"
+          >
+            <div
+              class="ShowImage ShowCard__image"
+              data-testid="show-image"
+            >
+              <div
+                class="BaseRevealImage"
+                data-testid="base-reveal-image"
+              >
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__image"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__filter"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+              </div>
+            </div>
+            <div
+              class="StarRating ShowCard__rating"
+              data-testid="rating"
+            >
+              <div
+                class="StarRating__icons"
+              >
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="t-para ShowCard__text"
+            >
+              Under the Dome
+            </h3>
+          </div>
+        </a>
+      </div>
+      <div
+        class="ShowSchedule__item"
+        data-testid="show-schedule-show"
+      >
+        <a
+          class="ShowCard"
+          href="/shows/1"
+        >
+          <div
+            class="ShowCard__main"
+          >
+            <div
+              class="ShowImage ShowCard__image"
+              data-testid="show-image"
+            >
+              <div
+                class="BaseRevealImage"
+                data-testid="base-reveal-image"
+              >
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__image"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__filter"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+              </div>
+            </div>
+            <div
+              class="StarRating ShowCard__rating"
+              data-testid="rating"
+            >
+              <div
+                class="StarRating__icons"
+              >
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="t-para ShowCard__text"
+            >
+              Under the Dome
+            </h3>
+          </div>
+        </a>
+      </div>
+      <div
+        class="ShowSchedule__item"
+        data-testid="show-schedule-show"
+      >
+        <a
+          class="ShowCard"
+          href="/shows/1"
+        >
+          <div
+            class="ShowCard__main"
+          >
+            <div
+              class="ShowImage ShowCard__image"
+              data-testid="show-image"
+            >
+              <div
+                class="BaseRevealImage"
+                data-testid="base-reveal-image"
+              >
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__image"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__filter"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+              </div>
+            </div>
+            <div
+              class="StarRating ShowCard__rating"
+              data-testid="rating"
+            >
+              <div
+                class="StarRating__icons"
+              >
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="t-para ShowCard__text"
+            >
+              Under the Dome
+            </h3>
+          </div>
+        </a>
+      </div>
+      <div
+        class="ShowSchedule__item"
+        data-testid="show-schedule-show"
+      >
+        <a
+          class="ShowCard"
+          href="/shows/1"
+        >
+          <div
+            class="ShowCard__main"
+          >
+            <div
+              class="ShowImage ShowCard__image"
+              data-testid="show-image"
+            >
+              <div
+                class="BaseRevealImage"
+                data-testid="base-reveal-image"
+              >
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__image"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__filter"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+              </div>
+            </div>
+            <div
+              class="StarRating ShowCard__rating"
+              data-testid="rating"
+            >
+              <div
+                class="StarRating__icons"
+              >
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="t-para ShowCard__text"
+            >
+              Under the Dome
+            </h3>
+          </div>
+        </a>
+      </div>
+      <div
+        class="ShowSchedule__item"
+        data-testid="show-schedule-show"
+      >
+        <a
+          class="ShowCard"
+          href="/shows/1"
+        >
+          <div
+            class="ShowCard__main"
+          >
+            <div
+              class="ShowImage ShowCard__image"
+              data-testid="show-image"
+            >
+              <div
+                class="BaseRevealImage"
+                data-testid="base-reveal-image"
+              >
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__image"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__filter"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+              </div>
+            </div>
+            <div
+              class="StarRating ShowCard__rating"
+              data-testid="rating"
+            >
+              <div
+                class="StarRating__icons"
+              >
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="t-para ShowCard__text"
+            >
+              Under the Dome
+            </h3>
+          </div>
+        </a>
+      </div>
+      <div
+        class="ShowSchedule__item"
+        data-testid="show-schedule-show"
+      >
+        <a
+          class="ShowCard"
+          href="/shows/1"
+        >
+          <div
+            class="ShowCard__main"
+          >
+            <div
+              class="ShowImage ShowCard__image"
+              data-testid="show-image"
+            >
+              <div
+                class="BaseRevealImage"
+                data-testid="base-reveal-image"
+              >
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__image"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__filter"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+              </div>
+            </div>
+            <div
+              class="StarRating ShowCard__rating"
+              data-testid="rating"
+            >
+              <div
+                class="StarRating__icons"
+              >
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="t-para ShowCard__text"
+            >
+              Under the Dome
+            </h3>
+          </div>
+        </a>
+      </div>
+      <div
+        class="ShowSchedule__item"
+        data-testid="show-schedule-show"
+      >
+        <a
+          class="ShowCard"
+          href="/shows/1"
+        >
+          <div
+            class="ShowCard__main"
+          >
+            <div
+              class="ShowImage ShowCard__image"
+              data-testid="show-image"
+            >
+              <div
+                class="BaseRevealImage"
+                data-testid="base-reveal-image"
+              >
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__image"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__filter"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+              </div>
+            </div>
+            <div
+              class="StarRating ShowCard__rating"
+              data-testid="rating"
+            >
+              <div
+                class="StarRating__icons"
+              >
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="t-para ShowCard__text"
+            >
+              Under the Dome
+            </h3>
+          </div>
+        </a>
+      </div>
+      <div
+        class="ShowSchedule__item"
+        data-testid="show-schedule-show"
+      >
+        <a
+          class="ShowCard"
+          href="/shows/1"
+        >
+          <div
+            class="ShowCard__main"
+          >
+            <div
+              class="ShowImage ShowCard__image"
+              data-testid="show-image"
+            >
+              <div
+                class="BaseRevealImage"
+                data-testid="base-reveal-image"
+              >
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__image"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__filter"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+              </div>
+            </div>
+            <div
+              class="StarRating ShowCard__rating"
+              data-testid="rating"
+            >
+              <div
+                class="StarRating__icons"
+              >
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="t-para ShowCard__text"
+            >
+              Under the Dome
+            </h3>
+          </div>
+        </a>
+      </div>
+      <div
+        class="ShowSchedule__item"
+        data-testid="show-schedule-show"
+      >
+        <a
+          class="ShowCard"
+          href="/shows/1"
+        >
+          <div
+            class="ShowCard__main"
+          >
+            <div
+              class="ShowImage ShowCard__image"
+              data-testid="show-image"
+            >
+              <div
+                class="BaseRevealImage"
+                data-testid="base-reveal-image"
+              >
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__image"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+                <img
+                  alt="Cover image for Under the Dome"
+                  class="BaseRevealImage__filter"
+                  height="295"
+                  loading="lazy"
+                  src="//static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                  width="210"
+                />
+              </div>
+            </div>
+            <div
+              class="StarRating ShowCard__rating"
+              data-testid="rating"
+            >
+              <div
+                class="StarRating__icons"
+              >
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon Star--is-active"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <svg
+                  class="Star StarRating__icon"
+                  data-testid="star"
+                  viewBox="0 0 14 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.667 9.95L2.547 12l.786-4.342L0 4.584l4.607-.634L6.667 0l2.06 3.95 4.606.634L10 7.658 10.787 12l-4.12-2.05z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="t-para ShowCard__text"
+            >
+              Under the Dome
+            </h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

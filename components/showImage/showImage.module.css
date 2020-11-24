@@ -1,0 +1,12 @@
+/* ------------------------------------ *\
+  #ShowImage
+\* ------------------------------------ */
+
+.ShowImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  border: 2px solid $black;
+  background-color: $white;
+}

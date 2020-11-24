@@ -1,0 +1,17 @@
+/* ------------------------------------ *\
+  #Wrappers
+\* ------------------------------------ */
+
+.wrapper {
+  width: 100%;
+  max-width: $bmw;
+  padding-right: calc($bsu-md / 2);
+  padding-left: calc($bsu-md / 2);
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (--sm) {
+    padding-right: $bsu-xl;
+    padding-left: $bsu-xl;
+  }
+}
