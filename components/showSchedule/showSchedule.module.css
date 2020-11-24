@@ -12,7 +12,7 @@
 
 .ShowSchedule__grid {
   display: grid;
-  grid-column-gap: Sbsu-sm;
+  grid-column-gap: $bsu-sm;
   grid-row-gap: $bsu;
   grid-template-columns: repeat(2, 1fr);
 
