@@ -66,6 +66,9 @@ Styles utilise PostCSS and CSS modules with the BEM naming methodology. It is wo
 ### Unit
 Components have been unit tested using Jest and React Testing Library. As mentioned, testing and certainly unit testing was not big at my previous work (though it should have been) and such this was very unfamiliar territory. The documentation on this however was excellent and I'd probably say this is one of the [best intros I've ever read](https://www.robinwieruch.de/react-testing-library). Pleasingly, the approach to testing that I took led to refactoring of some components so that they behaved in a more 'single responsibility' way. I'd certainly be interested to work on testing an application with a greter level of functionality and create more integration type tests that Kent C Dodds recommends with React Testing Library.
 
+### End-to-end
+It would have been nice to explore Cypress for this however given the functionality of the application we would have mainly been testing the routing of the browser which wouldn't makes sense to do! A shout out to Ghost Inspector here as a service that makes adding end-to-end tests incredibly quick. It's no replacement for Cypress but certainly does a job if you need some reassurance quickly.
+
 ### Cross browser
 The application has been tested on Chrome and Chrome on Android but not extensively across the usual candidates.
 
