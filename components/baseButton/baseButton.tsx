@@ -1,3 +1,5 @@
+import { useContext, useCallback } from 'react'
+import { CursorContext } from '../../context/cursorContext'
 import classNames from 'classnames'
 import styles from './baseButton.module.css'
 
@@ -12,11 +14,18 @@ const BaseButton: React.FunctionComponent<Props> = ({
   text,
   onClick,
 }: Props) => {
+  const [cursorIsActive, setCursorIsActive] = useContext(CursorContext)
+  const updateCursor = useCallback(() => {
+    setCursorIsActive((cursorIsActive) => !cursorIsActive)
+  }, [cursorIsActive])
+
   return (
     <button
       className={classNames(styles.BaseButton, className)}
       type="button"
       onClick={onClick}
+      onMouseEnter={updateCursor}
+      onMouseLeave={updateCursor}
     >
       {text}
     </button>
