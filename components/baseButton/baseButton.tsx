@@ -1,4 +1,3 @@
-import { useContext, useCallback } from 'react'
 import { useCursor } from '../../hooks/useCursor'
 import classNames from 'classnames'
 

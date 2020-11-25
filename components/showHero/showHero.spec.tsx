@@ -1,6 +1,5 @@
 import React from 'react'
-import { render, RenderResult } from '../../utils/test-utils'
-import userEvent from '@testing-library/user-event'
+import { render, RenderResult, fireEvent } from '../../utils/test-utils'
 
 import { mockShow } from '../../__mocks__/mockShow'
 
@@ -33,7 +32,7 @@ describe('<ShowHero />', () => {
     it('should toggle "Read More" to "Read Less" ', async () => {
       el = render(<ShowHero show={mockShow} />)
 
-      await userEvent.click(el.getByRole('button'))
+      await fireEvent.click(el.getByRole('button'))
 
       expect(el.queryByText(/Read Less/)).toBeInTheDocument()
     })
