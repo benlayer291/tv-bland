@@ -1,6 +1,7 @@
 import { useContext, useCallback } from 'react'
-import { CursorContext } from '../../context/cursorContext'
+import { useCursor } from '../../hooks/useCursor'
 import classNames from 'classnames'
+
 import styles from './baseButton.module.css'
 
 type Props = {
@@ -14,18 +15,15 @@ const BaseButton: React.FunctionComponent<Props> = ({
   text,
   onClick,
 }: Props) => {
-  const [cursorIsActive, setCursorIsActive] = useContext(CursorContext)
-  const updateCursor = useCallback(() => {
-    setCursorIsActive((cursorIsActive) => !cursorIsActive)
-  }, [cursorIsActive])
+  const cursorHandler = useCursor()
 
   return (
     <button
       className={classNames(styles.BaseButton, className)}
       type="button"
       onClick={onClick}
-      onMouseEnter={updateCursor}
-      onMouseLeave={updateCursor}
+      onMouseEnter={cursorHandler.onMouseEnter}
+      onMouseLeave={cursorHandler.onMouseLeave}
     >
       {text}
     </button>
