@@ -14,15 +14,17 @@ const TheCursor: React.FunctionComponent = () => {
 
   const router = useRouter()
 
-  const [isActive] = useContext(CursorContext)
+  const [isActive, setIsActive] = useContext(CursorContext)
   const [position, setPosition] = useState<InterfacePositionCoordinates>({
     x: 0,
     y: 0,
   })
-
-  const updatePosition = (e) => setPosition({ x: e.clientX, y: e.clientY })
+  const [isHidden, setIsHidden] = useState<boolean>(false)
+  const [isClicked, setIsClicked] = useState<boolean>(false)
 
   useEffect(() => {
+    const updatePosition = (e) => setPosition({ x: e.clientX, y: e.clientY })
+
     document.addEventListener('mousemove', updatePosition)
     document.addEventListener('mouseenter', updatePosition)
 
@@ -30,14 +32,12 @@ const TheCursor: React.FunctionComponent = () => {
       document.removeEventListener('mousemove', updatePosition)
       document.removeEventListener('mouseenter', updatePosition)
     }
-  }, [router.pathname])
-
-  const [isClicked, setClicked] = useState<boolean>(false)
-
-  const onMouseUp = () => setClicked(false)
-  const onMouseDown = () => setClicked(true)
+  }, [])
 
   useEffect(() => {
+    const onMouseUp = () => setIsClicked(false)
+    const onMouseDown = () => setIsClicked(true)
+
     document.addEventListener('mouseup', onMouseUp)
     document.addEventListener('mousedown', onMouseDown)
 
@@ -45,14 +45,12 @@ const TheCursor: React.FunctionComponent = () => {
       document.removeEventListener('mouseup', onMouseUp)
       document.removeEventListener('mousedown', onMouseDown)
     }
-  }, [router.pathname])
-
-  const [isHidden, setHidden] = useState<boolean>(false)
-
-  const onMouseEnter = () => setHidden(false)
-  const onMouseLeave = () => setHidden(true)
+  }, [])
 
   useEffect(() => {
+    const onMouseEnter = () => setIsHidden(false)
+    const onMouseLeave = () => setIsHidden(true)
+
     document.addEventListener('mouseenter', onMouseEnter)
     document.addEventListener('mouseleave', onMouseLeave)
 
@@ -60,7 +58,19 @@ const TheCursor: React.FunctionComponent = () => {
       document.removeEventListener('mouseenter', onMouseEnter)
       document.removeEventListener('mouseleave', onMouseLeave)
     }
-  }, [router.pathname])
+  }, [])
+
+  // Listen for route change to ensure cursor active state is reset upon route change
+  // after following link on previous route that was hovered and then clicked
+  useEffect(() => {
+    const onRouteChange = () => setIsActive(false)
+
+    router.events.on('routeChangeComplete', onRouteChange)
+
+    return () => {
+      router.events.off('routeChangeComplete', onRouteChange)
+    }
+  }, [])
 
   return (
     <div
