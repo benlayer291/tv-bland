@@ -4,6 +4,7 @@
 name: Jest, RTL tests
 
 on:
+  push:
   pull_request:
     branches: [ devlop ]
 

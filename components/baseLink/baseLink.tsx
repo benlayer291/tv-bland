@@ -1,5 +1,4 @@
-import { useContext, useCallback } from 'react'
-import { CursorContext } from '../../context/cursorContext'
+import { useCursor } from '../../hooks/useCursor'
 import Link from 'next/link'
 
 type Props = {
@@ -13,17 +12,14 @@ const BaseLink: React.FunctionComponent<Props> = ({
   className,
   href,
 }: Props) => {
-  const [cursorIsActive, setCursorIsActive] = useContext(CursorContext)
-  const updateCursor = useCallback(() => {
-    setCursorIsActive((cursorIsActive) => !cursorIsActive)
-  }, [cursorIsActive])
+  const cursorHandler = useCursor()
 
   return (
     <Link href={href} passHref>
       <a
         className={className}
-        onMouseEnter={updateCursor}
-        onMouseLeave={updateCursor}
+        onMouseEnter={cursorHandler.onMouseEnter}
+        onMouseLeave={cursorHandler.onMouseLeave}
       >
         {children}
       </a>
