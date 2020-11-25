@@ -1,13 +1,17 @@
+import { useRouter } from 'next/router'
 import Head from 'next/head'
 
 import TheHeader from '../theHeader/theHeader'
 import TheFooter from '../theFooter/theFooter'
+import TheTransitionPage from '../theTransitionPage/theTranstionPage'
 
 type Props = {
   children?: React.ReactNode
 }
 
 const TheLayout: React.FunctionComponent<Props> = ({ children }: Props) => {
+  const router = useRouter()
+
   return (
     <>
       <Head>
@@ -87,7 +91,9 @@ const TheLayout: React.FunctionComponent<Props> = ({ children }: Props) => {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffffff" />
       </Head>
       <TheHeader />
-      <main>{children}</main>
+      <TheTransitionPage location={router.pathname}>
+        <main>{children}</main>
+      </TheTransitionPage>
       <TheFooter />
     </>
   )
